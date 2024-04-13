@@ -5,9 +5,10 @@ import {Home, About, Experience, Projects} from './components';
 function App() {
     return (
         <>
+            {/* Unchangeable */}
             <header>
+                <h1>Zeri Aaron Malacas</h1>
                 <nav>
-                    <h1>Zeri Aaron Malacas</h1>
                     <ul>
                         <li><Link to={'/home'} className='nav-item'>Home</Link></li>
                         <li><Link to={'/about'} className='nav-item'>About</Link></li>
@@ -25,12 +26,10 @@ function App() {
                 </Routes>
             </header>
 
-            <main>
-
-            </main>
-
+            {/* Unchangeable */}
             <footer>
-
+                {/* Copyright and Contact */}
+                <h1>Copyright &copy; Zeri Aaron Malacas</h1>
             </footer>
         </>
     )
