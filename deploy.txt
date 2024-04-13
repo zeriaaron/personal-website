@@ -6,3 +6,8 @@
 6. "deploy": "gh-pages -d build" -> {or "build": "dist"}
 7. commit and push first to master 
 8. npm run deploy
+
+
+To delete deployment
+1. delete the gh-pages branch
+2. delete the build folder
