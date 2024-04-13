@@ -1,0 +1,8 @@
+1. npm install gh-pages --save-dev
+2. open package.json
+3. "homepage": "https://{username}.github.io/{reponame}"
+4. under scripts
+5. "predeploy": "npm run build"
+6. "deploy": "gh-pages -d build" -> {or "build": "dist"}
+7. commit and push first to master 
+8. npm run deploy
