@@ -4,18 +4,15 @@ import pictureOfMe from '../assets/images/zeri_trans_updated3.png'
 let Home = () => {
     return (
         <>
-            <h1>Home page</h1>
             <main>
-                <section>
-                    <figure>
-                        <img src={pictureOfMe} alt="Zeri Aaron" />
-                    </figure>
+                <section className='leftSec'>
+                    <img src={pictureOfMe} alt="Zeri Aaron" />
                 </section>
-                <section>
-                    <h1>Zeri Aaron Malacas</h1>
-                    <h2>Electronics Engineer</h2>
+                <section className='rightSec'>
+                    <h1><strong>Zeri Aaron Malacas</strong></h1>
+                    <h2><strong>Electronics Engineer</strong></h2>
                     <p>
-                        A future Software Engineer eager to make a change 
+                        A future <strong>Software Engineer</strong> eager to make a change 
                         and create a better future by providing solutions 
                         to contemporary problems that individuals and companies 
                         face through designing and building software applications 
