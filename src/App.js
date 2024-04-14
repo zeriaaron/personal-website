@@ -13,7 +13,7 @@ function App() {
             <header>
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
-                        <Link className="navbar-brand" to={'/'}>Zeri Aaron Malacas</Link>
+                        <Link className="navbar-brand" to={'/personal-website/'}>Zeri Aaron Malacas</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
                             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -21,10 +21,10 @@ function App() {
 
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <Link to={'/'} className='nav-link' aria-current="page">Home</Link>
-                                <Link to={'/about'} className='nav-link'>About</Link>
-                                <Link to={'/experience'} className='nav-link'>Experience</Link>
-                                <Link to={'/projects'} className='nav-link'>Projects</Link>
+                                <Link to={'/personal-website/'} className='nav-link' aria-current="page">Home</Link>
+                                <Link to={'/personal-website/about'} className='nav-link'>About</Link>
+                                <Link to={'/personal-website/experience'} className='nav-link'>Experience</Link>
+                                <Link to={'/personal-website/projects'} className='nav-link'>Projects</Link>
                             </div>
                         </div>
                     </div>
@@ -32,10 +32,10 @@ function App() {
 
                 {/* Routing */}
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/experience' element={<Experience />} />
-                    <Route path='/projects' element={<Projects />} />
+                    <Route path='/personal-website/' element={<Home />} />
+                    <Route path='/personal-website/about' element={<About />} />
+                    <Route path='/personal-website/experience' element={<Experience />} />
+                    <Route path='/personal-website/projects' element={<Projects />} />
                 </Routes>
             </header>
 
