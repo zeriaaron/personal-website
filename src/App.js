@@ -9,7 +9,7 @@ import {Home, About, Experience, Projects} from './components';
 function App() {
     return (
         <>  
-            {/* Unchangeable */}
+            {/* Fixed */}
             <header>
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
@@ -39,10 +39,11 @@ function App() {
                 </Routes>
             </header>
 
-            {/* Unchangeable */}
+            {/* Fixed */}
             <footer>
-                {/* Copyright and Contact */}
-                <h1>Copyright &copy; Zeri Aaron Malacas</h1>
+                <div className="container-fluid">
+                    <p>All Rights Reserved &copy; 2024 Zeri Aaron Malacas</p>
+                </div>
             </footer>
         </>
     )
