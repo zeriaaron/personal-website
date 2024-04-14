@@ -9,11 +9,18 @@ let Home = () => {
                 <section>
                     <figure>
                         <img src={pictureOfMe} alt="Zeri Aaron" />
-                        <figcaption>Zeri Aaron's Picture wearing his black long sleeve polo</figcaption>
                     </figure>
                 </section>
                 <section>
-
+                    <h1>Zeri Aaron Malacas</h1>
+                    <h2>Electronics Engineer</h2>
+                    <p>
+                        A future Software Engineer eager to make a change 
+                        and create a better future by providing solutions 
+                        to contemporary problems that individuals and companies 
+                        face through designing and building software applications 
+                        that prioritize interactivity and responsiveness of design.
+                    </p>
                 </section>
             </main>
         </>
