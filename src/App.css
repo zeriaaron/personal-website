@@ -3,12 +3,22 @@
     padding: 0;
 }
 
+.navbar {
+    background-color: #1f2020;
+    
+}
+
 .navbar-collapse {
     justify-content: flex-end;
 }
 
 .navbar-brand {
     margin-left: 0.5rem;
+    color: white;
+}
+
+.nav-link {
+    color: white;
 }
 
 .nav-link:last-child {
@@ -26,7 +36,10 @@ p {
     padding-bottom: 1rem;
 }
 
-
+footer {
+    background-color: #1f2020;
+    color: white;
+}
 
 
 

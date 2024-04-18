@@ -11,7 +11,8 @@ function App() {
         <>  
             {/* Fixed */}
             <header>
-                <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                {/*  bg-body-tertiary */}
+                <nav className="navbar navbar-expand-lg"> 
                     <div className="container-fluid">
                         <Link className="navbar-brand" to={'/personal-website/'}>Zeri Aaron Malacas</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
