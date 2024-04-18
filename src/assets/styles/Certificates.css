@@ -2,3 +2,40 @@
     margin: 0;
     padding: 0;
 }
+
+ul {
+    padding-left: 0;
+}
+
+input[type='radio'] {
+    appearance: none;
+}
+
+label {
+    cursor: pointer;
+    border-bottom: 10px solid black;
+    opacity: 0.5;
+    padding: 30px;
+    padding-bottom: 0;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+input[type='radio']:checked + label {
+    border-bottom: 10px solid black;
+    opacity: 1;
+}
+
+input[type='radio']:hover + label {
+    border-bottom: 10px solid black;
+    opacity: 1;
+}
+
+img {
+    /* cursor: pointer; */
+    width: 270px;
+    height: 480px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
