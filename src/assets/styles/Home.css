@@ -8,6 +8,8 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #1f2020;
+    color: white;
 } 
 
 section:first-child {
@@ -69,7 +71,7 @@ li {
 i {
     font-size: 24px;
     margin: 1rem;
-    color: black;
+    color: white;
 }
 
 i:first-child {

@@ -1,15 +1,16 @@
 import '../assets/styles/Home.css'
 import pictureOfMe from '../assets/images/zeri_trans_updated3.png'
 import yellowSplash from '../assets/images/yellow_splash.jpg'
-import {Link} from 'react-router-dom'
-import {Parallax, ParallaxLayer} from '@react-spring/parallax'
+import { Link } from 'react-router-dom'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 let Home = () => {
     return (
         <>
             <main>
                 <section>
-                    <div>
+                    {/* Ready */}
+                    {/* <div>
                         <Parallax pages={2} style={{overflow: "hidden"}}>
                             <ParallaxLayer>
                                 <h1>Welcome</h1>
@@ -19,18 +20,18 @@ let Home = () => {
                                 <h1>Hi</h1>
                             </ParallaxLayer>
                         </Parallax>
-                    </div>
-                    <div className='paint' style={{backgroundImage: `url(${yellowSplash})`}}></div>
+                    </div> */}
+                    <div className='paint' style={{ backgroundImage: `url(${yellowSplash})` }}></div>
                     <img src={pictureOfMe} alt="Zeri Aaron" className="me" />
                 </section>
                 <section>
                     <h1><strong>Zeri Aaron Malacas</strong></h1>
                     <h2>Electronics Engineer</h2>
                     <p>
-                        A future <strong>Software Engineer</strong> eager to make a change 
-                        and create a better future by providing solutions 
-                        to contemporary problems that individuals and companies 
-                        face through designing and building software applications 
+                        A future <strong>Software Engineer</strong> eager to make a change
+                        and create a better future by providing solutions
+                        to contemporary problems that individuals and companies
+                        face through designing and building software applications
                         that prioritize interactivity and responsiveness of design.
                     </p>
                     <ul className="icons container-fluid">
