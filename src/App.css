@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    background-color: #1f2020;
+    background-color: skyblue; /* #1f2020 */
     
 }
 
@@ -25,10 +25,6 @@
     margin-right: 0.5rem;
 }
 
-footer {
-    background-color: rgb(252, 252, 252);
-}
-
 p {
     margin: 0;
     margin-left: 0.5rem;
@@ -37,7 +33,7 @@ p {
 }
 
 footer {
-    background-color: #1f2020;
+    background-color: skyblue;
     color: white;
 }
 
