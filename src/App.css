@@ -3,20 +3,26 @@
     padding: 0;
 }
 
+.navbar {
+    background-color: skyblue; /* #1f2020 */
+    
+}
+
 .navbar-collapse {
     justify-content: flex-end;
 }
 
 .navbar-brand {
     margin-left: 0.5rem;
+    color: white;
+}
+
+.nav-link {
+    color: white;
 }
 
 .nav-link:last-child {
     margin-right: 0.5rem;
-}
-
-footer {
-    background-color: rgb(252, 252, 252);
 }
 
 p {
@@ -26,7 +32,10 @@ p {
     padding-bottom: 1rem;
 }
 
-
+footer {
+    background-color: skyblue;
+    color: white;
+}
 
 
 
