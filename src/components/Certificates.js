@@ -1,14 +1,9 @@
 import '../assets/styles/Certificates.css'
 import { useState } from 'react'
 import { intro, java, vers, htcs, react } from '../assets/images/meta'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper/modules'
+import { register } from 'swiper/element/bundle'
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
-
+register()
 
 let Cisco = () => {
     return (
@@ -23,39 +18,29 @@ let Meta = () => {
         <>
             <h1>Meta</h1>
 
-            <Swiper
-                modules={[Navigation, Pagination, Scrollbar, EffectCoverflow]}
-                effect={'coverflow'}
-                grabCursor={true}
-                slidesPerView={'auto'}
-                centeredSlides={true}
-                pagination={{ clickable: true }}
+            <swiper-container
+                space-between='10'
+                slides-per-view='auto'
+                centered-slides='true'
+                pagination='true'
+                loop='true'
             >
-                <SwiperSlide>
-                    <img src={intro} alt='Certificate' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={java} alt='Certificate' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={vers} alt='Certificate' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={htcs} alt='Certificate' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={react} alt='Certificate' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={react} alt='Certificate' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={react} alt='Certificate' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={react} alt='Certificate' />
-                </SwiperSlide>
-            </Swiper>
+                <swiper-slide>
+                    <img src={intro} alt="Intro" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src={java} alt="JavaScript" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src={vers} alt="Version Control" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src={htcs} alt="HTML and CSS depth" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src={react} alt="React Basics" />
+                </swiper-slide>
+            </swiper-container>
 
 
 

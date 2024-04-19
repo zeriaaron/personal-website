@@ -36,6 +36,15 @@ img {
     width: 270px;
     height: 480px;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+}
+
+swipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swipe-slider {
+    width: 100% ;
+    height: 100%;
 }
