@@ -1,73 +1,9 @@
 import '../assets/styles/Certificates.css'
 import { useState } from 'react'
-import { intro, java, vers, htcs, react } from '../assets/images/meta'
-import { register } from 'swiper/element/bundle'
+import Cisco from './certificates/Cisco'
+import Meta from './certificates/Meta'
+import Microsoft from './certificates/Microsoft'
 
-register()
-
-let Cisco = () => {
-    return (
-        <>
-            <h1>Cisco</h1>
-        </>
-    )
-}
-
-let Meta = () => {
-    return (
-        <>
-            <h1>Meta</h1>
-
-            <swiper-container
-                space-between='10'
-                slides-per-view='auto'
-                centered-slides='true'
-                pagination='true'
-                loop='true'
-            >
-                <swiper-slide>
-                    <img src={intro} alt="Intro" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src={java} alt="JavaScript" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src={vers} alt="Version Control" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src={htcs} alt="HTML and CSS depth" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src={react} alt="React Basics" />
-                </swiper-slide>
-            </swiper-container>
-
-
-
-
-
-
-            {/* <div className='wrapper'>
-                <div className='carousel'>
-                    <img className='cert-img' src={intro} alt='Certificate' />
-                    <img className='cert-img' src={java} alt='Certificate' />
-                    <img className='cert-img' src={vers} alt='Certificate' />
-                    <img className='cert-img' src={htcs} alt='Certificate' />
-                    <img className='cert-img' src={react} alt='Certificate' />
-                    <img className='cert-img' src={vers} alt='Certificate' />
-                    <img className='cert-img' src={htcs} alt='Certificate' />
-                    <img className='cert-img' src={react} alt='Certificate' />
-                </div>
-            </div> */}
-        </>
-    )
-}
-
-let Microsoft = () => {
-    return (
-        <h1>Microsoft</h1>
-    )
-}
 
 let Certificates = () => {
     const [cert, setCert] = useState('meta')
@@ -92,8 +28,8 @@ let Certificates = () => {
             <h1>Certificates page</h1>
             <ul className='d-flex 
             flex-row 
-            justify-content-center 
-            align-items-end
+            justify-content-center
+            align-items-center
             flex-wrap'>
                 <li>
                     <input type="radio"
@@ -103,7 +39,7 @@ let Certificates = () => {
                         onChange={checkedHandler}
                     />
                     <label htmlFor="cert1">
-                        Cybersecurity Certificate
+                        Cybersecurity Certificates
                     </label>
                 </li>
                 <li>
@@ -115,7 +51,7 @@ let Certificates = () => {
                         onChange={checkedHandler}
                     />
                     <label htmlFor="cert2">
-                        Meta Professional Certificate
+                        Front-End Development Certificates
                     </label>
                 </li>
                 <li>
@@ -126,7 +62,7 @@ let Certificates = () => {
                         onChange={checkedHandler}
                     />
                     <label htmlFor="cert3">
-                        Microsoft Excel Certificate
+                        Microsoft Excel Certificates
                     </label>
                 </li>
             </ul>
