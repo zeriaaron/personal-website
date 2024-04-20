@@ -1,31 +1,43 @@
 import '../assets/styles/About.css'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { useRef } from 'react'
-import { ls1, ls2, ls3, ls4 } from '../assets/images/about'
+import { useRef, useEffect } from 'react'
+import { ls1, ls2, ls3, ls4, ls5, ls6, ls7 } from '../assets/images/about'
 
 let About = () => {
     const parallax = useRef(null)
+
+    // useEffect(
+
+    // )
 
     return (
         <>
             <main>
                 <Parallax
                     ref={parallax}
-                    pages={3}
+                    pages={2}
+                    style={
+                        {
+                            top: '0',
+                            left: '0'
+                        }
+                    }
                 >
                     <ParallaxLayer
                         offset={0}
                         speed={0}
-                        factor={3}
+                        factor={0.5}
                         style={
                             {
-                                backgroundImage: `url(${ls1})`,
-                                objectFit: 'cover'
+                                backgroundImage: `url(${ls2})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                // backgroundPosition: 'center'
                             }
                         }
                     >
                         <ParallaxLayer
-                            offset={0.8}
+                            offset={0.4}
                             speed={0.6}
                             style={
                                 {
@@ -42,11 +54,13 @@ let About = () => {
                     <ParallaxLayer
                         offset={1}
                         speed={0}
-                        factor={2}
+                        factor={0.5}
                         style={
                             {
-                                backgroundImage: `url(${ls3})`,
-                                objectFit: 'cover'
+                                backgroundImage: `url(${ls6})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                // backgroundPosition: 'center',
                             }
                         }
                     >
