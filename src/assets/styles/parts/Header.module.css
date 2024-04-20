@@ -9,6 +9,14 @@
     color: white;
 }
 
+.navbarBrand:visited {
+    color: white;
+}
+
+.navbarBrand:hover {
+    color: black;
+}
+
 .navbarToggler {
     color: transparent;
     border: none;
