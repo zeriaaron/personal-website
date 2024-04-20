@@ -1,0 +1,43 @@
+.navbar {
+    position: fixed;
+    background-color: skyblue; /* #1f2020 */
+    z-index: 9999;
+}
+
+.navbarBrand {
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.navbarToggler {
+    color: transparent;
+    border: none;
+}
+
+.togglerIcon {
+    color: white;
+    transform: rotateZ(0deg)
+}
+
+.navbarCollapse {
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.navbarNav {
+}
+
+.navLink {
+    color: white;
+}
+
+.navLink:last-child {
+    margin-right: 0.5rem;
+}
+
+.p {
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
