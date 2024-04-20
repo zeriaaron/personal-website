@@ -43,8 +43,16 @@ export default function Header() {
 
             setIsClicked(true)
         }
+    }
 
+    const [color, setColor] = useState('navbar-dark')
 
+    let mouseEnterHandler = () => {
+        setColor('navbar-light')
+    }
+
+    let mouseLeaveHandler = () => {
+        setColor('navbar-dark')
     }
 
     return (
@@ -54,7 +62,7 @@ export default function Header() {
                     <Link className={`navbar-brand ${headerStyle.navbarBrand}`} to={'/personal-website/'}>Zeri Aaron Malacas</Link>
                     <button onClick={clickHandler} className={`navbar-toggler ${headerStyle.navbarToggler}`} type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span ref={togglerIcon} className={`navbar-dark navbar-toggler-icon ${headerStyle.togglerIcon}`}></span>
+                        <span onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} ref={togglerIcon} className={`${color} navbar-toggler-icon ${headerStyle.togglerIcon}`}></span>
                     </button>
 
                     <div className={`collapse navbar-collapse ${headerStyle.navbarCollapse}`} id="navbarNavAltMarkup">

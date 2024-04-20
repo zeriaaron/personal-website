@@ -22,9 +22,9 @@
     border: none;
 }
 
+
 .togglerIcon {
     color: white;
-    transform: rotateZ(0deg)
 }
 
 .navbarCollapse {
@@ -37,6 +37,14 @@
 
 .navLink {
     color: white;
+}
+
+.navLink:visited {
+    color: white;
+}
+
+.navLink:hover {
+    color: black;
 }
 
 .navLink:last-child {
