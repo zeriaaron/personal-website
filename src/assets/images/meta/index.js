@@ -1,0 +1,5 @@
+export { default as intro } from './1.png'
+export { default as java } from './2.png'
+export { default as vers } from './3.png'
+export { default as htcs } from './4.png'
+export { default as react } from './5.png'
