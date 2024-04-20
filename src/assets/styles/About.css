@@ -1,7 +1,7 @@
 
-body {
+/* body {
     overflow-y: hidden;
-}
+} */
 
 .par-container {
     width: 100%;
@@ -11,10 +11,5 @@ body {
 
 img {
     object-fit: fill
-}
-
-.parallax {
-    scrollbar-width: 0;
-    overflow-y: hidden;
 }
 
