@@ -1,4 +1,3 @@
-import '../assets/styles/Home.css'
 import homeStyle from '../assets/styles/Home.module.css'
 import pictureOfMe from '../assets/images/zeri2.png'
 import yellowSplash from '../assets/images/yellow_splash.jpg'
