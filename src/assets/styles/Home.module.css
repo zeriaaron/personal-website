@@ -7,19 +7,18 @@
     margin: 0;
 }
 
-.mainContainer {
-    /* width: 100vw; */
+/* .mainContainer {
     height: 94.1vh;
-}
+} */
 
-@media screen and (max-height: 900px) {
+/* @media screen and (max-height: 900px) {
     .mainContainer {
         height: 150vh;
     }
-}
+} */
 
 .secContainer {
-    height: 100%;
+    gap: 10px;
 }
 
 .li {
@@ -54,5 +53,4 @@
 .icon {
     font-size: 24px;
     color: white;
-    padding-right: 10px;
 }

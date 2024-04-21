@@ -1,6 +1,6 @@
 import homeStyle from '../assets/styles/Home.module.css'
 import pictureOfMe from '../assets/images/zeri2.png'
-import yellowSplash from '../assets/images/yellow_splash.jpg'
+// import yellowSplash from '../assets/images/yellow_splash.jpg'
 import { Link } from 'react-router-dom'
 
 
@@ -8,25 +8,26 @@ let Home = () => {
     return (
         <>
             <main className={homeStyle.mainContainer}>
+
+                {/* Container */}
                 <section className={`d-flex 
-                flex-row 
-                flex-wrap
-                justify-content-center 
-                align-items-center 
+                flex-row
+                justify-content-evenly
+                align-items-center
                 ${homeStyle.secContainer}`}
                 >
-                    {/* <div className='paint' style={{ backgroundImage: `url(${yellowSplash})` }}></div> */}
-
+                    {/* Image Container: left */}
                     <div className={`d-flex 
-                    flex-column
+                    flex-row
                     justify-content-center
                     align-items-center
-                    p-3
+                    p-4
                     ${homeStyle.imgContainer}`}>
                         <img src={pictureOfMe} alt="Zeri Aaron" className={`${homeStyle.me}`} />
                     </div>
 
-                    <article className={`d-flex 
+                    {/* Description Container: Right */}
+                    <article className={`d-flex
                     flex-column 
                     justify-content-center
                     align-items-start
@@ -41,7 +42,7 @@ let Home = () => {
                             face through designing and building software applications
                             that prioritize interactivity and responsiveness of design.
                         </p>
-                        <ul className={`d-inline-flex container-fluid gap-2 ${homeStyle.ulContainer}`}>
+                        <ul className={`d-inline-flex container-fluid gap-3 ${homeStyle.ulContainer}`}>
                             <li className={homeStyle.li}><Link to="https://www.linkedin.com/in/zeri-aaron-malacas" target="_blank"><i className={`bi bi-linkedin ${homeStyle.icon}`}></i></Link></li>
                             <li className={homeStyle.li}><Link to="https://github.com/zeriaaron" target="_blank"><i className={`bi bi-github ${homeStyle.icon}`}></i></Link></li>
                             <li className={homeStyle.li}><Link to="https://www.facebook.com/zeriaaronmalacas/" target="_blank"><i className={`bi bi-facebook ${homeStyle.icon}`}></i></Link></li>
