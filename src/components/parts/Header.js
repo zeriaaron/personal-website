@@ -45,14 +45,8 @@ export default function Header() {
         }
     }
 
-    const [color, setColor] = useState('navbar-dark')
-
-    let mouseEnterHandler = () => {
-        setColor('navbar-light')
-    }
-
-    let mouseLeaveHandler = () => {
-        setColor('navbar-dark')
+    let onTouchEndHandler = () => {
+        togglerIcon.current.style.backgroundImage = `url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")`
     }
 
     return (
@@ -60,9 +54,9 @@ export default function Header() {
             <nav className={`navbar navbar-expand-lg container-fluid ${headerStyle.navbar}`}>
                 <div className="container-fluid">
                     <Link className={`navbar-brand ${headerStyle.navbarBrand}`} to={'/personal-website/'}>Zeri Aaron Malacas</Link>
-                    <button onClick={clickHandler} className={`navbar-toggler ${headerStyle.navbarToggler}`} type="button" data-bs-toggle="collapse"
+                    <button onTouchEndCapture={onTouchEndHandler} onClick={clickHandler} className={`navbar-toggler ${headerStyle.navbarToggler}`} type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} ref={togglerIcon} className={`${color} navbar-toggler-icon ${headerStyle.togglerIcon}`}></span>
+                        <span ref={togglerIcon} className={`navbar-toggler-icon ${headerStyle.togglerIcon}`}></span>
                     </button>
 
                     <div className={`collapse navbar-collapse ${headerStyle.navbarCollapse}`} id="navbarNavAltMarkup">
