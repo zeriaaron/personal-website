@@ -24,8 +24,7 @@ let Certificates = () => {
     }
 
     return (
-        <main>
-            <h1>Certificates page</h1>
+        <main className={certStyle.mainContainer}>
             <ul className={`d-flex 
             flex-row 
             justify-content-center
