@@ -6,6 +6,10 @@
     padding-left: 0;
 }
 
+.liContainer {
+    list-style: none;
+}
+
 .inputContainer[type='radio'] {
     appearance: none;
 }

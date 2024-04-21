@@ -31,7 +31,7 @@ let Certificates = () => {
             align-items-center
             flex-wrap
             ${certStyle.ulContainer}`}>
-                <li>
+                <li className={certStyle.liContainer}>
                     <input type="radio"
                         name='cert'
                         id='cert1'
@@ -43,7 +43,7 @@ let Certificates = () => {
                         Cybersecurity Certificates
                     </label>
                 </li>
-                <li>
+                <li className={certStyle.liContainer}>
                     <input type="radio"
                         name='cert'
                         id='cert2'
@@ -56,7 +56,7 @@ let Certificates = () => {
                         Front-End Development Certificates
                     </label>
                 </li>
-                <li>
+                <li className={certStyle.liContainer}>
                     <input type="radio"
                         name='cert'
                         id='cert3'
