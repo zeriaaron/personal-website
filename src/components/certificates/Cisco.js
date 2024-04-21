@@ -1,15 +1,13 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { network, fortinet } from '../../assets/images/cisco'
+import swiperStyle from '../../assets/styles/certificates/Swiper.module.css'
+
 
 export default function Cisco() {
+    const swiperContainer = useRef(null)
+
     useEffect(
         () => {
-            const swiperContainer = document.querySelector('swiper-container')
-            // const swiperSlides = swiperContainer.querySelectorAll('swiper-slide')
-            // const middle = Math.round(0 + (swiperSlides.length - 0) / 2) - 1;
-
-            // console.log(swiperSlides.length)
-
             const swiperParams = {
                 initialSlide: 0,
                 autoplay: {
@@ -57,9 +55,9 @@ export default function Cisco() {
                 },
             }
 
-            Object.assign(swiperContainer, swiperParams)
+            Object.assign(swiperContainer.current, swiperParams)
 
-            swiperContainer.initialize()
+            swiperContainer.current.initialize()
         }, []
     )
 
@@ -67,12 +65,13 @@ export default function Cisco() {
         <>
             <swiper-container
                 init='false'
+                ref={swiperContainer}
             >
                 <swiper-slide lazy='true'>
-                    <img src={network} alt="Intro" loading='lazy' />
+                    <img src={network} alt="Intro" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
                 <swiper-slide lazy='true'>
-                    <img src={fortinet} alt="Intro" loading='lazy' />
+                    <img src={fortinet} alt="Intro" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
             </swiper-container>
         </>

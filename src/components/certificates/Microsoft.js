@@ -1,15 +1,12 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { excel } from '../../assets/images/microsoft'
+import swiperStyle from '../../assets/styles/certificates/Swiper.module.css'
 
 export default function Microsoft() {
+    const swiperContainer = useRef(null)
+
     useEffect(
         () => {
-            const swiperContainer = document.querySelector('swiper-container')
-            // const swiperSlides = swiperContainer.querySelectorAll('swiper-slide')
-            // const middle = Math.round(0 + (swiperSlides.length - 0) / 2) - 1;
-
-            // console.log(swiperSlides.length)
-
             const swiperParams = {
                 initialSlide: 0,
                 autoplay: {
@@ -57,9 +54,9 @@ export default function Microsoft() {
                 },
             }
 
-            Object.assign(swiperContainer, swiperParams)
+            Object.assign(swiperContainer.current, swiperParams)
 
-            swiperContainer.initialize()
+            swiperContainer.current.initialize()
         }, []
     )
 
@@ -67,9 +64,10 @@ export default function Microsoft() {
         <>
             <swiper-container
                 init='false'
+                ref={swiperContainer}
             >
                 <swiper-slide lazy='true'>
-                    <img src={excel} alt="Intro" loading='lazy' />
+                    <img src={excel} alt="Intro" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
             </swiper-container>
         </>

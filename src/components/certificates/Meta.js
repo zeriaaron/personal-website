@@ -1,16 +1,13 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { intro, java, vers, htcs, react } from '../../assets/images/meta'
+import swiperStyle from '../../assets/styles/certificates/Swiper.module.css'
 
 
 export default function Meta() {
+    const swiperContainer = useRef(null)
+
     useEffect(
         () => {
-            const swiperContainer = document.querySelector('swiper-container')
-            // const swiperSlides = swiperContainer.querySelectorAll('swiper-slide')
-            // const middle = Math.round(0 + (swiperSlides.length - 0) / 2) - 1;
-
-            // console.log(swiperSlides.length)
-
             const swiperParams = {
                 initialSlide: 0,
                 autoplay: {
@@ -58,9 +55,9 @@ export default function Meta() {
                 },
             }
 
-            Object.assign(swiperContainer, swiperParams)
+            Object.assign(swiperContainer.current, swiperParams)
 
-            swiperContainer.initialize()
+            swiperContainer.current.initialize()
         }, []
     )
 
@@ -68,25 +65,26 @@ export default function Meta() {
         <>
             <swiper-container
                 init='false'
+                ref={swiperContainer}
             >
                 <swiper-slide lazy='true'>
-                    <img src={intro} alt="Intro" loading='lazy' />
+                    <img src={intro} alt="Intro" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
 
                 <swiper-slide lazy='true'>
-                    <img src={java} alt="JavaScript" loading='lazy' />
+                    <img src={java} alt="JavaScript" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
 
                 <swiper-slide lazy='true'>
-                    <img src={vers} alt="Version Control" loading='lazy' />
+                    <img src={vers} alt="Version Control" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
 
                 <swiper-slide lazy='true'>
-                    <img src={htcs} alt="HTML and CSS depth" loading='lazy' />
+                    <img src={htcs} alt="HTML and CSS depth" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
 
                 <swiper-slide lazy='true'>
-                    <img src={react} alt="React Basics" loading='lazy' />
+                    <img src={react} alt="React Basics" loading='lazy' className={swiperStyle.img} />
                 </swiper-slide>
             </swiper-container>
         </>

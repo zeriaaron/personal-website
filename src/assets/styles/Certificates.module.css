@@ -1,0 +1,28 @@
+.ulContainer {
+    padding-left: 0;
+}
+
+.inputContainer[type='radio'] {
+    appearance: none;
+}
+
+.inputContainer[type='radio']:checked + .labelContainer {
+    border-bottom: 10px solid black;
+    opacity: 1;
+}
+
+.inputContainer[type='radio']:hover + .labelContainer {
+    border-bottom: 10px solid black;
+    opacity: 1;
+}
+
+.labelContainer {
+    cursor: pointer;
+    border-bottom: 10px solid black;
+    opacity: 0.5;
+    padding: 30px;
+    padding-bottom: 0;
+    text-align: center;
+    text-wrap: wrap;
+    color: white;
+}

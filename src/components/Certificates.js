@@ -1,4 +1,4 @@
-import '../assets/styles/Certificates.css'
+import certStyle from '../assets/styles/Certificates.module.css'
 import { useState } from 'react'
 import Cisco from './certificates/Cisco'
 import Meta from './certificates/Meta'
@@ -26,19 +26,21 @@ let Certificates = () => {
     return (
         <main>
             <h1>Certificates page</h1>
-            <ul className='d-flex 
+            <ul className={`d-flex 
             flex-row 
             justify-content-center
             align-items-center
-            flex-wrap'>
+            flex-wrap
+            ${certStyle.ulContainer}`}>
                 <li>
                     <input type="radio"
                         name='cert'
                         id='cert1'
                         value='cisco'
                         onChange={checkedHandler}
+                        className={certStyle.inputContainer}
                     />
-                    <label htmlFor="cert1">
+                    <label htmlFor="cert1" className={certStyle.labelContainer}>
                         Cybersecurity Certificates
                     </label>
                 </li>
@@ -49,8 +51,9 @@ let Certificates = () => {
                         value='meta'
                         defaultChecked
                         onChange={checkedHandler}
+                        className={certStyle.inputContainer}
                     />
-                    <label htmlFor="cert2">
+                    <label htmlFor="cert2" className={certStyle.labelContainer}>
                         Front-End Development Certificates
                     </label>
                 </li>
@@ -60,8 +63,9 @@ let Certificates = () => {
                         id='cert3'
                         value='micro'
                         onChange={checkedHandler}
+                        className={certStyle.inputContainer}
                     />
-                    <label htmlFor="cert3">
+                    <label htmlFor="cert3" className={certStyle.labelContainer}>
                         Microsoft Excel Certificates
                     </label>
                 </li>
