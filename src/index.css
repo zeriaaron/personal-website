@@ -13,11 +13,6 @@ body {
     background-color: rgb(30, 30, 30);
 }
 
-main {
-    margin: 10%;
-    margin-top: 0;
-}
-
 h1, h2, p {
     color: white;
 }
