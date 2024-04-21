@@ -1,31 +1,12 @@
-.me {
-    width: 386px;
-    height: 600px;
-}
 
-@media screen and (max-width: 500px) {
-    .me {
-        width: calc(386px / 1.2);
-        height: calc(600px / 1.2);
-    }
-}
 
-.img-container {
-    flex: 1;
-}
 
-.desc-container {
-    flex: 1;
-}
 
-.container-fluid {
-    padding-left: 0;
-}
 
-.bi {
-    font-size: 24px;
-    color: white;
-}
+
+
+
+
 
 
 /* main {

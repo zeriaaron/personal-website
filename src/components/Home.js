@@ -3,34 +3,36 @@ import homeStyle from '../assets/styles/Home.module.css'
 import pictureOfMe from '../assets/images/zeri2.png'
 import yellowSplash from '../assets/images/yellow_splash.jpg'
 import { Link } from 'react-router-dom'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 
 let Home = () => {
     return (
         <>
-            <main>
-                <section className='d-flex 
+            <main className={homeStyle.mainContainer}>
+                <section className={`d-flex 
                 flex-row 
                 flex-wrap
                 justify-content-center 
-                align-items-center'>
+                align-items-center 
+                ${homeStyle.secContainer}`}
+                >
                     {/* <div className='paint' style={{ backgroundImage: `url(${yellowSplash})` }}></div> */}
 
-                    <div className='d-flex 
+                    <div className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-center
-                    p-3 
-                    img-container'>
-                        <img src={pictureOfMe} alt="Zeri Aaron" className="me" />
+                    p-3
+                    ${homeStyle.imgContainer}`}>
+                        <img src={pictureOfMe} alt="Zeri Aaron" className={`${homeStyle.me}`} />
                     </div>
 
-                    <article className='d-flex 
+                    <article className={`d-flex 
                     flex-column 
                     justify-content-center
                     align-items-start
                     p-4
-                    desc-container'>
+                    ${homeStyle.descContainer}`}>
                         <h1 className={homeStyle.h1}><strong>Zeri Aaron Malacas</strong></h1>
                         <h2 className={homeStyle.h2}>Electronics Engineer</h2>
                         <p className={homeStyle.p}>
@@ -40,10 +42,10 @@ let Home = () => {
                             face through designing and building software applications
                             that prioritize interactivity and responsiveness of design.
                         </p>
-                        <ul className="d-inline-flex container-fluid gap-2">
-                            <li className={homeStyle.li}><Link to="https://www.linkedin.com/in/zeri-aaron-malacas" target="_blank"><i className="bi bi-linkedin"></i></Link></li>
-                            <li className={homeStyle.li}><Link to="https://github.com/zeriaaron" target="_blank"><i className="bi bi-github"></i></Link></li>
-                            <li className={homeStyle.li}><Link to="https://www.facebook.com/zeriaaronmalacas/" target="_blank"><i className="bi bi-facebook"></i></Link></li>
+                        <ul className={`d-inline-flex container-fluid gap-2 ${homeStyle.ulContainer}`}>
+                            <li className={homeStyle.li}><Link to="https://www.linkedin.com/in/zeri-aaron-malacas" target="_blank"><i className={`bi bi-linkedin ${homeStyle.icon}`}></i></Link></li>
+                            <li className={homeStyle.li}><Link to="https://github.com/zeriaaron" target="_blank"><i className={`bi bi-github ${homeStyle.icon}`}></i></Link></li>
+                            <li className={homeStyle.li}><Link to="https://www.facebook.com/zeriaaronmalacas/" target="_blank"><i className={`bi bi-facebook ${homeStyle.icon}`}></i></Link></li>
                         </ul>
                     </article>
                 </section>

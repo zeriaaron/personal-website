@@ -7,6 +7,52 @@
     margin: 0;
 }
 
+.mainContainer {
+    /* width: 100vw; */
+    height: 94.1vh;
+}
+
+@media screen and (max-height: 900px) {
+    .mainContainer {
+        height: 150vh;
+    }
+}
+
+.secContainer {
+    height: 100%;
+}
+
 .li {
     list-style: none;
+}
+
+.me {
+    width: 386px;
+    height: 600px;
+}
+
+@media screen and (max-width: 500px) {
+    .me {
+        width: calc(386px / 1.2);
+        height: calc(600px / 1.2);
+    }
+}
+
+.imgContainer {
+    flex: 1;
+}
+
+.descContainer {
+    flex: 1;
+}
+
+.ulContainer {
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.icon {
+    font-size: 24px;
+    color: white;
+    padding-right: 10px;
 }
