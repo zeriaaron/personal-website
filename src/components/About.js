@@ -1,7 +1,10 @@
 import aboutStyle from '../assets/styles/About.module.css'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { useEffect, useRef } from 'react'
-import { ls1, ls2, ls3, ls4, ls5, ls6, ls7, ls8, ls9, ls10, ls11, ls12 } from '../assets/images/about'
+import {
+    ls1, ls2, ls3, ls4, ls5, ls6, ls7, ls8, ls9, ls10, ls11, ls12,
+    ls13, ls14, ls15, ls16, ls17, ls18
+} from '../assets/images/about'
 
 
 const About = () => {
@@ -11,7 +14,7 @@ const About = () => {
     const birthYear = 2002
 
     const month = date.getMonth()
-    const birthMonth = 7
+    const birthMonth = 7 // August [0]
 
     let age = month >= birthMonth ? year - birthYear : (year - birthYear) - 1;
 
@@ -21,41 +24,38 @@ const About = () => {
                 <section className={aboutStyle.secContainer}>
 
                     <Parallax
-                        pages={3}
+                        pages={5}
                     >
                         <ParallaxLayer
                             offset={0}
                             style={
                                 {
-                                    backgroundImage: `url(${ls2})`,
-                                    backgroundSize: 'cover'
+                                    backgroundColor: 'rgb(135, 206, 235)',
+                                }
+                            }
+                            speed={1}
+                            factor={1}
+                        >
+                            <ParallaxLayer
+                                offset={0.5}
+                                speed={-0.1}
+                            >
+                                <h1>Hey! What's going on?</h1>
+                                <h2>Scroll down for more!</h2>
+                            </ParallaxLayer>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer
+                            offset={1}
+                            style={
+                                {
+                                    backgroundColor: 'rgb(130, 201, 230',
                                 }
                             }
                             factor={1}
-                            speed={0.5}
                         >
 
-                            {/* Introductory */}
-                            <ParallaxLayer
-                                offset={0.5}
-                                speed={-1}
-                            >
-                                <article className={aboutStyle.article}>
-                                    <h1>Hey! What is going on?</h1>
-                                    <p>
-                                        My name is Zeri Aaron E. Malacas and I am taking up Bachelor of Science in Electronics Engineering
-                                        at Mapua Malayan Colleges Laguna. I am {age} years old and currently living in the Philippines. I am
-                                        passionate about Software Engineering and I want to pursue a career in the field of
-                                    </p>
-                                </article>
-                            </ParallaxLayer>
-
-
-
                         </ParallaxLayer>
-
-
-
                     </Parallax>
 
 
