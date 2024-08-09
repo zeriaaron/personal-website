@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, Navigate } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import { Home, About, Certificates, Projects, Contacts } from '../../components'
 import headerStyle from '../../assets/styles/parts/Header.module.css'
@@ -78,6 +78,8 @@ export default function Header() {
                 <Route path='/personal-website/certificates' element={<Certificates />} />
                 <Route path='/personal-website/projects' element={<Projects />} />
                 <Route path='/personal-website/contacts' element={<Contacts />} />
+
+                <Route path='*' element={<Navigate to='/personal-website/' />} />
             </Routes>
         </header >
     )
