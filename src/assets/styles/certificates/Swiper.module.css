@@ -7,11 +7,21 @@ swiper-slide {
     text-align: center;
 }
 
+swiper-slide:hover img {
+    transform: scale(1.1);
+}
+
+swiper-slide img {
+    transition: transform 0.3s ease-in-out;
+}
+
 .img {
     width: 270px;
     height: 480px;
     border-radius: 10px;
     object-fit: cover;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 :root {
