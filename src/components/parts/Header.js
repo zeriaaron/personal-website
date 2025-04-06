@@ -52,7 +52,7 @@ export default function Header() {
     return (
         <header>
             <nav className={`navbar navbar-expand-lg container-fluid ${headerStyle.navbar}`}>
-                <div className="container-fluid">
+                <div className={`container-fluid ${headerStyle.navContainer}`}>
                     <Link className={`navbar-brand ${headerStyle.navbarBrand}`} to={'/personal-website/'}>Zeri Aaron Malacas</Link>
                     <button onTouchEndCapture={onTouchEndHandler} onClick={clickHandler} className={`navbar-toggler ${headerStyle.navbarToggler}`} type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

@@ -3,7 +3,11 @@
     background-color: rgba(30, 30, 30, 0.4); /* #1f2020 */
     backdrop-filter: blur(3px);
     z-index: 9999;
-    
+}
+
+.navContainer {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navbarBrand {
