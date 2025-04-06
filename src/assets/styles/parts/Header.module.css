@@ -16,7 +16,8 @@
 }
 
 .navbarBrand:hover {
-    color: black;
+    /* color: black; */
+    color: rgb(150, 150, 150, 1);
 }
 
 .navbarToggler {
@@ -54,7 +55,8 @@
 }
 
 .navLink:hover {
-    color: black;
+    /* color: black; */
+    color: rgb(150, 150, 150, 1);
 }
 
 .navLink:last-child {
