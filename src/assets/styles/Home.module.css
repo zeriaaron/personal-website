@@ -39,10 +39,12 @@
 
 .imgContainer {
     flex: 1;
+    margin-left: 100px;
 }
 
 .descContainer {
     flex: 1;
+    margin-right: 100px;
 }
 
 .ulContainer {
