@@ -17,9 +17,9 @@
     }
 } */
 
-.secContainer {
-    gap: 10px;
-}
+/* .secContainer {
+    gap: 0px;
+} */
 
 .li {
     list-style: none;

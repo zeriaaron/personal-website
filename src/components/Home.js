@@ -35,7 +35,7 @@ let Home = () => {
                     flex-row
                     justify-content-center
                     align-items-center
-                    p-4
+                    px-4 pt-4
                     ${homeStyle.imgContainer}`}>
                         {/* <img src={pictureOfMe} alt="Zeri Aaron Malacas" className={`${homeStyle.me}`} style={imageAnimation} /> */}
                         <animated.img src={pictureOfMe} alt="Zeri Aaron Malacas" className={`${homeStyle.me}`} style={imageAnimation} />
@@ -46,7 +46,7 @@ let Home = () => {
                     flex-column 
                     justify-content-center
                     align-items-start
-                    p-4
+                    px-4 pt-4
                     ${homeStyle.descContainer}`} style={descAnimation}>
                         <h1 className={homeStyle.h1}><strong>Zeri Aaron Malacas</strong></h1>
                         <h2 className={homeStyle.h2}>Electronics Engineer</h2>
