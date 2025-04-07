@@ -25,7 +25,7 @@ let Home = () => {
 
                 {/* Container */}
                 <section className={`d-flex 
-                flex-row
+                flex-row flex-wrap
                 justify-content-evenly
                 align-items-center
                 ${homeStyle.secContainer}`}

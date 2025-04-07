@@ -52,7 +52,7 @@
 
 .imgContainer {
     flex: 1;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 /* @keyframes slideInFromRight {
@@ -69,7 +69,7 @@
 
 .descContainer {
     flex: 1;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     /* animation: slideInFromRight 1s ease-out backwards; */
 }
 
