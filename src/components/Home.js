@@ -1,17 +1,31 @@
 import homeStyle from '../assets/styles/Home.module.css'
 import pictureOfMe from '../assets/images/zeri2.png'
+import { useSpring, animated, config } from '@react-spring/web'
 // import yellowSplash from '../assets/images/yellow_splash.jpg'
 import { Link } from 'react-router-dom'
 
 
 let Home = () => {
+    const useSlideAnimation = (fromX, toX) => {
+        return useSpring({
+            from: { transform: `translateX(${fromX}%)`, opacity: 0 },
+            to: { transform: `translateX(${toX}%)`, opacity: 1 },
+            // config: { tension: 100, friction: 30 },
+            config: config.molasses,
+            delay: 500,
+        });
+    };
+
+    const imageAnimation = useSlideAnimation(-100, 0);
+    const descAnimation = useSlideAnimation(100, 0);
+
     return (
         <>
             <main className={homeStyle.mainContainer}>
 
                 {/* Container */}
                 <section className={`d-flex 
-                flex-row
+                flex-row flex-wrap
                 justify-content-evenly
                 align-items-center
                 ${homeStyle.secContainer}`}
@@ -21,18 +35,19 @@ let Home = () => {
                     flex-row
                     justify-content-center
                     align-items-center
-                    p-4
+                    px-4 pt-4
                     ${homeStyle.imgContainer}`}>
-                        <img src={pictureOfMe} alt="Zeri Aaron" className={`${homeStyle.me}`} />
+                        {/* <img src={pictureOfMe} alt="Zeri Aaron Malacas" className={`${homeStyle.me}`} style={imageAnimation} /> */}
+                        <animated.img src={pictureOfMe} alt="Zeri Aaron Malacas" className={`${homeStyle.me}`} style={imageAnimation} />
                     </div>
 
                     {/* Description Container: Right */}
-                    <article className={`d-flex
+                    <animated.article className={`d-flex
                     flex-column 
                     justify-content-center
                     align-items-start
-                    p-4
-                    ${homeStyle.descContainer}`}>
+                    px-4 pt-4
+                    ${homeStyle.descContainer}`} style={descAnimation}>
                         <h1 className={homeStyle.h1}><strong>Zeri Aaron Malacas</strong></h1>
                         <h2 className={homeStyle.h2}>Electronics Engineer</h2>
                         <p className={homeStyle.p}>
@@ -47,7 +62,7 @@ let Home = () => {
                             <li className={homeStyle.li}><Link to="https://github.com/zeriaaron" target="_blank"><i className={`bi bi-github ${homeStyle.icon}`}></i></Link></li>
                             <li className={homeStyle.li}><Link to="https://www.facebook.com/zeriaaronmalacas/" target="_blank"><i className={`bi bi-facebook ${homeStyle.icon}`}></i></Link></li>
                         </ul>
-                    </article>
+                    </animated.article>
                 </section>
             </main>
         </>

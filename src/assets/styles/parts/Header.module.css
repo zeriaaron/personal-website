@@ -3,7 +3,11 @@
     background-color: rgba(30, 30, 30, 0.4); /* #1f2020 */
     backdrop-filter: blur(3px);
     z-index: 9999;
-    
+}
+
+.navContainer {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navbarBrand {
@@ -16,7 +20,8 @@
 }
 
 .navbarBrand:hover {
-    color: black;
+    /* color: black; */
+    color: rgb(150, 150, 150, 1);
 }
 
 .navbarToggler {
@@ -49,16 +54,17 @@
     color: white;
 }
 
-.navLink:visited {
-    color: white;
-}
-
 .navLink:hover {
-    color: black;
+    /* color: black; */
+    color: rgb(150, 150, 150, 1);
 }
 
 .navLink:last-child {
     margin-right: 0.5rem;
+}
+
+.activeLink {
+    color: skyblue !important;
 }
 
 .p {

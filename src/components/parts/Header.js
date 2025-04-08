@@ -1,4 +1,4 @@
-import { Routes, Route, Link, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, NavLink } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import { Home, About, Certificates, Projects, Contacts } from '../../components'
 import headerStyle from '../../assets/styles/parts/Header.module.css'
@@ -52,20 +52,21 @@ export default function Header() {
     return (
         <header>
             <nav className={`navbar navbar-expand-lg container-fluid ${headerStyle.navbar}`}>
-                <div className="container-fluid">
-                    <Link className={`navbar-brand ${headerStyle.navbarBrand}`} to={'/personal-website/'}>Zeri Aaron Malacas</Link>
+                <div className={`container-fluid ${headerStyle.navContainer}`}>
+                    <NavLink className={`navbar-brand ${headerStyle.navbarBrand}`} to={'/personal-website/'}>Zeri Aaron Malacas</NavLink>
                     <button onTouchEndCapture={onTouchEndHandler} onClick={clickHandler} className={`navbar-toggler ${headerStyle.navbarToggler}`} type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span ref={togglerIcon} className={`navbar-toggler-icon ${headerStyle.togglerIcon}`}></span>
                     </button>
 
+                    {/* Home About Certificates Projects Contacts */}
                     <div className={`collapse navbar-collapse ${headerStyle.navbarCollapse}`} id="navbarNavAltMarkup">
                         <div className={`navbar-nav ${headerStyle.navbarNav}`}>
-                            <Link to={'/personal-website/'} className={`nav-link ${headerStyle.navLink}`} aria-current="page">{links.home.content}</Link>
-                            <Link to={`/personal-website/${links.about.link}`} className={`nav-link ${headerStyle.navLink}`}>{links.about.content}</Link>
-                            <Link to={`/personal-website/${links.certificates.link}`} className={`nav-link ${headerStyle.navLink}`}>{links.certificates.content}</Link>
-                            <Link to={`/personal-website/${links.projects.link}`} className={`nav-link ${headerStyle.navLink}`}>{links.projects.content}</Link>
-                            <Link to={`/personal-website/${links.contacts.link}`} className={`nav-link ${headerStyle.navLink}`}>{links.contacts.content}</Link>
+                            <NavLink to={'/personal-website/'} end className={({ isActive }) => `nav-link ${headerStyle.navLink} ${isActive ? headerStyle.activeLink : ''}`} aria-current="page">{links.home.content}</NavLink>
+                            <NavLink to={`/personal-website/${links.about.link}`} className={({ isActive }) => `nav-link ${headerStyle.navLink} ${isActive ? headerStyle.activeLink : ''}`}>{links.about.content}</NavLink>
+                            <NavLink to={`/personal-website/${links.certificates.link}`} className={({ isActive }) => `nav-link ${headerStyle.navLink} ${isActive ? headerStyle.activeLink : ''}`}>{links.certificates.content}</NavLink>
+                            <NavLink to={`/personal-website/${links.projects.link}`} className={({ isActive }) => `nav-link ${headerStyle.navLink} ${isActive ? headerStyle.activeLink : ''}`}>{links.projects.content}</NavLink>
+                            <NavLink to={`/personal-website/${links.contacts.link}`} className={({ isActive }) => `nav-link ${headerStyle.navLink} ${isActive ? headerStyle.activeLink : ''}`}>{links.contacts.content}</NavLink>
                         </div>
                     </div>
                 </div>
