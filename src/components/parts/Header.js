@@ -1,4 +1,4 @@
-import { Routes, Route, Link, Navigate, NavLink } from 'react-router-dom'
+import { Routes, Route, Navigate, NavLink } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import { Home, About, Certificates, Projects, Contacts } from '../../components'
 import headerStyle from '../../assets/styles/parts/Header.module.css'
