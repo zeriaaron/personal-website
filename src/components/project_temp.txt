@@ -1,0 +1,70 @@
+{/* 1st Project */}
+                <section className={`d-flex 
+                flex-row flex-wrap
+                justify-content-evenly
+                align-items-center`}>
+                    {/* Description */}
+                    <article className={`d-flex 
+                    flex-column
+                    justify-content-center
+                    align-items-start 
+                    p-4 ${projectStyle.mainSecContainer}`}>
+                        <h1 className={projectStyle.h1}>Introduction</h1>
+                        <p className={projectStyle.p}>
+                            We now live in a world where the digital
+                            landscape is rapidly evolving. As technology
+                            continues to advance, our world becomes more
+                            interconnected, creating endless opportunities
+                            for growth and transformation. In this dynamic
+                            environment, I am proud to present my portfolio,
+                            a testament to my journey in harnessing the power
+                            of digital solutions to encourage advancements
+                            and make an impact.
+                        </p>
+                    </article>
+                    {/* Image */}
+                    <div className={`d-flex 
+                    flex-row
+                    justify-content-center
+                    align-items-center 
+                    px-4 ${projectStyle.imgContainer1}`}>
+                        <img src={ls2} alt="" className={projectStyle.ls1} />
+                    </div>
+                </section>
+
+                {/* 2nd Project */}
+                <section className={`
+                d-flex
+                flex-row
+                flex-wrap
+                justify-content-center
+                align-items-center pt-5
+                `}>
+                    {/* Image */}
+                    <div className={`d-flex 
+                    flex-row
+                    justify-content-center
+                    align-items-center 
+                    px-4 ${projectStyle.imgContainer1}`}>
+                        <img src={ls1} alt="" className={projectStyle.ls1} />
+                    </div>
+                    {/* Description */}
+                    <article className={`d-flex 
+                    flex-column
+                    justify-content-center
+                    align-items-start 
+                    p-4 ${projectStyle.mainSecContainer}`}>
+                        <h1 className={projectStyle.h1}>Introduction</h1>
+                        <p className={projectStyle.p}>
+                            We now live in a world where the digital
+                            landscape is rapidly evolving. As technology
+                            continues to advance, our world becomes more
+                            interconnected, creating endless opportunities
+                            for growth and transformation. In this dynamic
+                            environment, I am proud to present my portfolio,
+                            a testament to my journey in harnessing the power
+                            of digital solutions to encourage advancements
+                            and make an impact.
+                        </p>
+                    </article>
+                </section>
