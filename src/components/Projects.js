@@ -1,5 +1,5 @@
 import projectStyle from '../assets/styles/Projects.module.css'
-import { animated, useSpring, config } from '@react-spring/web'
+import { animated, useSpring, config, useInView } from '@react-spring/web'
 import { ls1, ls2 } from '../assets/images/about'
 
 let Projects = () => {
@@ -18,7 +18,7 @@ let Projects = () => {
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1} style={{'color': 'skyblue'}}>Introduction</h1>
+                        <h1 className={projectStyle.h1}>Introduction</h1>
                         <p className={projectStyle.p}>
                             We now live in a world where the digital
                             landscape is rapidly evolving. As technology
@@ -45,7 +45,7 @@ let Projects = () => {
                             justify-content-center
                             align-items-start
                             `}>
-                                <h2 className={projectStyle.h2} style={{'color': 'skyblue'}}>About Me</h2>
+                                <h2 className={projectStyle.h2}>About Me</h2>
                                 <p className={projectStyle.p}>
                                     I am an Electronics Engineer graduated at Mapúa Malayan Colleges Laguna who is
                                     passionate about Software Engineering and eager to provide solutions to complex
@@ -59,7 +59,7 @@ let Projects = () => {
                             justify-content-center
                             align-items-start
                             `}>
-                                <h2 className={projectStyle.h2} style={{'color': 'skyblue'}}>About Portfolio</h2>
+                                <h2 className={projectStyle.h2}>About Portfolio</h2>
                                 <p className={projectStyle.p}>
                                     These projects reflect a combination of fields I am passionate about,
                                     such as software development, web development, deep learning, data analysis,
@@ -86,10 +86,16 @@ let Projects = () => {
                 justify-content-center
                 align-items-center pt-5
                 `}>
-                    {/* Main Section [flex-row] */}
-                        {/* Section | Image */}
-
-                    {/* Section: flex-column */}
+                    {/* Image */}
+                    <div className={`d-flex 
+                    flex-row
+                    justify-content-center
+                    align-items-center 
+                    px-4 ${projectStyle.imgContainer1}`}>
+                        <img src={ls1} alt="" className={projectStyle.ls1} />
+                    </div>
+                    
+                    {/* My Mission */}
                     <section className={`
                     d-flex
                     flex-column
@@ -97,14 +103,14 @@ let Projects = () => {
                     align-items-start
                     p-4 ${projectStyle.mainSecContainer} gap-2
                     `}>
-                        <h1 className={projectStyle.h1} style={{'color': 'skyblue'}}>My Mission</h1>
+                        <h1 className={projectStyle.h1}>My Mission</h1>
                         <article className={`
                         d-flex
                         flex-row
                         justify-content-center
                         align-items-center ${projectStyle.gap}
                         `}>
-                            <h1 className={projectStyle.h1} style={{'color': 'skyblue'}}>1</h1>
+                            <h1 className={projectStyle.h1}>1</h1>
                             <p className={projectStyle.p}>
                                 Help individuals solve their complex problems by providing them 
                                 with digital solutions through innovation, automation, and advancement.
@@ -116,7 +122,7 @@ let Projects = () => {
                         justify-content-center
                         align-items-center ${projectStyle.gap}
                         `}>
-                            <h1 className={projectStyle.h1} style={{'color': 'skyblue'}}>2</h1>
+                            <h1 className={projectStyle.h1}>2</h1>
                             <p className={projectStyle.p}>
                                 Provide visually appealing, user-friendly, and highly interactive software 
                                 and web development for users to benefit from.
@@ -128,30 +134,24 @@ let Projects = () => {
                         justify-content-center
                         align-items-center ${projectStyle.gap}
                         `}>
-                            <h1 className={projectStyle.h1} style={{'color': 'skyblue'}}>3</h1>
+                            <h1 className={projectStyle.h1}>3</h1>
                             <p className={projectStyle.p}>
-                                Enable businesses and individuals to bridge data and technology 
+                                Enable businesses and individuals to bridge data and technology
                                 successfully to maximize efficiency, growth and success.
                             </p>
                         </article>
                     </section>
-                    {/* Image */}
-                    <div className={`d-flex 
-                    flex-row
-                    justify-content-center
-                    align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls1} alt="" className={projectStyle.ls1} />
-                    </div>
-
-                    {/* Inside Section: */}
-                    {/* Article 1 [flex-row] */}
-                        {/* Number 1 | Paragraph */}
-                    {/* Article 2 [flex-row] */}
-                        {/* Number 2 | Paragraph */}
-                    {/* Article 3 [flex-row] */}
-                        {/* Number 3 | Paragraph */}
                 </section>
+
+                <div className={`
+                d-flex
+                flex-row
+                justify-content-center
+                align-items-center
+                p-4    
+                `}>
+                    <h1 className={projectStyle.h1p}>My Projects</h1>
+                </div>
             </main>
         </>
     )
