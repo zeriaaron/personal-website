@@ -1,6 +1,8 @@
 import './App.css';
 import Header from './components/parts/Header'
 import Footer from './components/parts/Footer'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import { Home, About, Certificates, Projects, Contacts } from './components'
 // import { useState, useEffect, useRef } from 'react'
 
 // https://zeriaaron.github.io/personal-website [root: zeriaaron.github.io]
@@ -49,6 +51,18 @@ function App() {
         <>
             <Header />
 
+            <main>
+                {/* Routing */}
+                <Routes>
+                    <Route path='/home' element={<Home />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/certificates' element={<Certificates />} />
+                    <Route path='/projects' element={<Projects />} />
+                    <Route path='/contacts' element={<Contacts />} />
+
+                    <Route path='*' element={<Navigate to='/home' />} />
+                </Routes>
+            </main>
 
             <Footer />
         </>
