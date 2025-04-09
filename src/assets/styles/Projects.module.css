@@ -1,0 +1,30 @@
+.h1, .h2, .h3 {
+    text-wrap: nowrap;
+    margin: 0;
+}
+
+.p {
+    text-align: justify;
+    margin: 0;
+}
+
+.mainContainer {
+    padding-top: 56px;
+}
+
+.ls1 {
+    width: 650px;
+    height: 600px;
+}
+
+.mainSecContainer {
+    flex: 1;
+}
+
+.gap {
+    gap: 30px;
+}
+
+.imgContainer1 {
+    flex: 1;
+}
