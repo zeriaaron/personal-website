@@ -1,0 +1,5 @@
+export { default as intro } from './intro.jpg'
+export { default as mission1 } from './m1.jpg'
+export { default as mission2 } from './m2.jpg'
+export { default as mission3 } from './m3.jpg'
+export { default as mission4 } from './m4.jpg'
