@@ -5,10 +5,11 @@
 }
 
 .h1p {
+    text-align: center;
     text-wrap: nowrap;
-    color: skyblue;
+    color: rgb(30, 30, 30, 1);
     margin: 0;
-    font-size: 10rem;
+    font-size: 8rem;
 }
 
 .p {
@@ -35,4 +36,23 @@
 
 .imgContainer1 {
     flex: 1;
+}
+
+.projectSwiper {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.swiperSlide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectSwiper img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
 }
