@@ -1,8 +1,9 @@
 import projectStyle from '../assets/styles/Projects.module.css'
 import { animated, useSpring, config, useInView } from '@react-spring/web'
 import { ls1, ls2, ls3, ls4, ls5, ls6, ls7 } from '../assets/images/about'
+import { intro, mission1, mission2, mission3, mission4 } from '../assets/images/projects'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, FreeMode, Autoplay, EffectCoverflow } from 'swiper/modules'
+import { Navigation, Pagination, FreeMode, Autoplay, EffectCoverflow, Grid } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -79,8 +80,9 @@ let Projects = () => {
                     flex-row
                     justify-content-center
                     align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls2} alt="" className={projectStyle.ls1} />
+                    px-4
+                    ${projectStyle.imgContainer1}`}>
+                        <img src={intro} alt="" className={projectStyle.ls1} style={{borderRadius: '30px'}} />
                     </div>
                 </section>
 
@@ -97,8 +99,35 @@ let Projects = () => {
                     flex-row
                     justify-content-center
                     align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls1} alt="" className={projectStyle.ls1} />
+                    px-4
+                    ${projectStyle.imgContainer1}`}>
+                        {/* <img src={ls1} alt="" className={projectStyle.ls1} /> */}
+                        <Swiper
+                        width={700}
+                        height={700}
+                        modules={[Grid, Pagination]}
+                        pagination={{ clickable: true }}
+                        grid={{
+                            rows: 2,
+                            fill: 'row',
+                        }}
+                        slidesPerView={2}
+                        spaceBetween={0}
+                        className={projectStyle.missionSwiper}
+                        >
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={mission1} alt="" style={{borderTopLeftRadius: '30px'}}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={mission2} alt="" style={{borderTopRightRadius: '30px'}}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={mission3} alt="" style={{borderBottomLeftRadius: '30px'}}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={mission4} alt="" style={{borderBottomRightRadius: '30px'}}/>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                     
                     {/* My Mission */}
@@ -160,8 +189,8 @@ let Projects = () => {
                     backgroundColor: 'skyblue',
                     marginBottom: '100px', 
                     marginTop: '100px', 
-                    paddingTop: '100px',
-                    paddingBottom: '100px',
+                    paddingTop: '70px',
+                    paddingBottom: '70px',
                     boxShadow: '0px 0px 35px rgba(255, 255, 255, 0.5)'
                 }}>
                     <h1 className={projectStyle.h1p}>My Projects</h1>
@@ -187,34 +216,50 @@ let Projects = () => {
                 grabCursor={true}
                 className={projectStyle.projectSwiper}
                 >
-                    <SwiperSlide className={`${projectStyle.swiperSlide}`}>
-                        <img src={ls7} alt=""/>
+                    <SwiperSlide className={projectStyle.swiperSlide}>
+                        <a href="#project1">
+                            <img src={ls7} alt=""/>
+                        </a>
                     </SwiperSlide>
-                    <SwiperSlide className={`${projectStyle.swiperSlide}`}>
-                        <img src={ls5} alt=""/>
+                    <SwiperSlide className={projectStyle.swiperSlide}>
+                        <a href="#project2">
+                            <img src={ls5} alt=""/>
+                        </a>
                     </SwiperSlide>
-                    <SwiperSlide className={`${projectStyle.swiperSlide}`}>
-                        <img src={ls6} alt=""/>
+                    <SwiperSlide className={projectStyle.swiperSlide}>
+                        <a href="#project3">
+                            <img src={ls6} alt=""/>
+                        </a>
                     </SwiperSlide>
-                    <SwiperSlide className={`${projectStyle.swiperSlide}`}>
-                        <img src={ls7} alt=""/>
+                    <SwiperSlide className={projectStyle.swiperSlide}>
+                        <a href="#project4">
+                            <img src={ls7} alt=""/>
+                        </a>
                     </SwiperSlide>
-                    <SwiperSlide className={`${projectStyle.swiperSlide}`}>
-                        <img src={ls5} alt=""/>
+                    <SwiperSlide className={projectStyle.swiperSlide}>
+                        <a href="#project5">
+                            <img src={ls5} alt=""/>
+                        </a>
                     </SwiperSlide>
-                    <SwiperSlide className={`${projectStyle.swiperSlide}`}>
-                        <img src={ls6} alt=""/>
+                    <SwiperSlide className={projectStyle.swiperSlide}>
+                        <a href="#project6">
+                            <img src={ls6} alt=""/>
+                        </a>
                     </SwiperSlide>
-                    <SwiperSlide className={`${projectStyle.swiperSlide}`}>
-                        <img src={ls5} alt=""/>
+                    <SwiperSlide className={projectStyle.swiperSlide}>
+                        <a href="#project7">
+                            <img src={ls5} alt=""/>
+                        </a>
                     </SwiperSlide>
                 </Swiper>
 
                 {/* 1st Project */}
-                <section className={`d-flex 
+                <section id='project1' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
-                align-items-center`}>
+                align-items-center
+                mt-5
+                `}>
                     {/* Description */}
                     <article className={`d-flex 
                     flex-column
@@ -245,7 +290,7 @@ let Projects = () => {
                 </section>
 
                 {/* 2nd Project */}
-                <section className={`
+                <section id='project2' className={`
                 d-flex
                 flex-row
                 flex-wrap
@@ -282,7 +327,7 @@ let Projects = () => {
                 </section>
 
                 {/* 3rd Project */}
-                <section className={`d-flex 
+                <section id='project3' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center`}>
@@ -316,7 +361,7 @@ let Projects = () => {
                 </section>
 
                 {/* 4th Project */}
-                <section className={`
+                <section id='project4' className={`
                 d-flex
                 flex-row
                 flex-wrap
@@ -353,7 +398,7 @@ let Projects = () => {
                 </section>
 
                 {/* 5th Project */}
-                <section className={`d-flex 
+                <section id='project5' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center`}>
@@ -387,7 +432,7 @@ let Projects = () => {
                 </section>
 
                 {/* 6th Project */}
-                <section className={`
+                <section id='project6' className={`
                 d-flex
                 flex-row
                 flex-wrap
@@ -424,7 +469,7 @@ let Projects = () => {
                 </section>
 
                 {/* 7th Project */}
-                <section className={`d-flex 
+                <section id='project7' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center`}>
