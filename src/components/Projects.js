@@ -668,7 +668,7 @@ let Projects = () => {
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Spoken</h1>
+                        <h1 className={projectStyle.h1}>Signal Procesing Application</h1>
                         
                         <section className={`
                         d-flex flex-row
@@ -684,23 +684,24 @@ let Projects = () => {
                             `}>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
-                                    This project is a software which features many advanced functions
-                                    than a standard scientific calculator. This program has 50 functions
-                                    in total which highlights the basic commands functions, different types
-                                    of equations and polynomials, graphing 2D plots, graphing 3D plots,
-                                    and higher mathematical operations that MATLAB provides.
+                                    This project is a desktop application that comprises of different
+                                    filters, frequency filters, plots, and other configurations for
+                                    signals. In this desktop applicatoin, the observation of data and
+                                    interpretation of results are a must, therefore it was designed in
+                                    such a way that graphs and information about the signal are provided
+                                    and available for use.
                                 </p>
                                 <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
                                 <p className={projectStyle.p}>
                                     <ul>
-                                        <li>Programmatic GUI Developer</li>
-                                        <li>Mathematician</li>
+                                        <li>Signal Processing Engineer</li>
+                                        <li>Desktop Application Developer</li>
                                     </ul>
                                     <p className={projectStyle.p}>
-                                        I am responsible for hard coding the entire functionalities and GUI
-                                        of the smart calculator application without relying on the App Designer
-                                        of MATLAB. I am also in charge of understanding the mathematical
-                                        operations used in the project for the operations to work as intended.
+                                        I am responsible for creating and managing algorithms to process
+                                        signals and analyze the filtered signals afterwards. I am also
+                                        the one who is responsible for coding the desktop application
+                                        to provide a graphical user interface for users to benefit from.
                                     </p>
                                 </p>
                             </article>
@@ -721,16 +722,18 @@ let Projects = () => {
                                     `}>
                                         <ul>
                                             <li>MATLAB</li>
+                                            <li>MATLAB App Designer</li>
                                         </ul>
                                     </div>
                                 </p>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
-                                    I was able to completely and manually coded the GUI of the smart calculator
-                                    along with coding its functionalities. Also, I was able to showcase my
-                                    understanding on different mathematical operations and graphs available in
-                                    MATLAB, and improve my desktop application development skills by providing a 
-                                    graphical user interface for the program.
+                                    I successfully managed and created algorithms required for the signal
+                                    to be processed efficiently. I was able to improve my skills on desktop
+                                    application development by integrating the signal processing functions
+                                    into the app using the app designer of MATLAB. The team also passed
+                                    the course because of the combination our skills and a result of a
+                                    good teamwork.
                                 </p>
                             </article>
                         </section>
