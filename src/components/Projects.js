@@ -1,6 +1,5 @@
 import projectStyle from '../assets/styles/Projects.module.css'
 import { animated, useSpring, config, useInView } from '@react-spring/web'
-import { ls1, ls2, ls3, ls4, ls5, ls6, ls7 } from '../assets/images/about'
 import {
     intro, mission1, mission2, mission3, mission4,
     proj1, proj1v2, proj1_1, proj1_2, proj1_3, proj1_4, proj1_5, proj1_6,
@@ -364,6 +363,12 @@ let Projects = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img src={proj1_4} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj1_5} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj1_6} alt="" className={projectStyle.imgProj}/>
                             </SwiperSlide>
                         </Swiper>
                     </div>
