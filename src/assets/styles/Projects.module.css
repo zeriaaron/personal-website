@@ -46,8 +46,8 @@
 }
 
 .swiperSlide {
-    text-align: center;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -68,6 +68,7 @@
 .imgProj {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .swiper1 {
@@ -76,6 +77,11 @@
 }
 
 .swiper2 {
+    width: 700px;
+    height: 500px;
+}
+
+.swiper3 {
     width: 700px;
     height: 500px;
 }
