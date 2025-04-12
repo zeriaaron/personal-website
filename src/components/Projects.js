@@ -281,7 +281,7 @@ let Projects = () => {
                         <section className={`
                         d-flex flex-row
                         justify-content-center
-                        align-items-center
+                        align-items-start
                         gap-4
                         `}>
                             {/* Description | Role and Responsibilities */}
@@ -312,10 +312,10 @@ let Projects = () => {
                             </article>
                             {/* Technologies and Tools Used | Outcomes and Achievements */}
                             <article className={`
-                            d-flex flex-column
+                            d-flex 
+                            flex-column
                             justify-content-center
                             align-items-start
-                            mx-4
                             `}>
                                 <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
                                 <ul>
@@ -427,7 +427,7 @@ let Projects = () => {
                         <section className={`
                         d-flex flex-row
                         justify-content-center
-                        align-items-center
+                        align-items-start
                         gap-4
                         `}>
                             {/* Description | Role and Responsibilities */}
@@ -534,7 +534,7 @@ let Projects = () => {
                         <section className={`
                         d-flex flex-row
                         justify-content-center
-                        align-items-center
+                        align-items-start
                         gap-4
                         `}>
                             {/* Description | Role and Responsibilities */}
@@ -678,7 +678,7 @@ let Projects = () => {
                         <section className={`
                         d-flex flex-row
                         justify-content-center
-                        align-items-center
+                        align-items-start
                         gap-4
                         `}>
                             {/* Description | Role and Responsibilities */}
@@ -761,7 +761,7 @@ let Projects = () => {
                         <section className={`
                         d-flex flex-row
                         justify-content-center
-                        align-items-center
+                        align-items-start
                         gap-4
                         `}>
                             {/* Description | Role and Responsibilities */}
@@ -928,7 +928,7 @@ let Projects = () => {
                         <section className={`
                         d-flex flex-row
                         justify-content-center
-                        align-items-center
+                        align-items-start
                         gap-4
                         `}>
                             {/* Description | Role and Responsibilities */}
@@ -1028,7 +1028,7 @@ let Projects = () => {
                         <section className={`
                         d-flex flex-row
                         justify-content-center
-                        align-items-center
+                        align-items-start
                         gap-4
                         `}>
                             {/* Description | Role and Responsibilities */}
