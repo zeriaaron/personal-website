@@ -610,6 +610,7 @@ let Projects = () => {
                             slideShadows: true,
                         }}
                         pagination={{clickable: true}}
+                        loop={true}
                         >
                             <SwiperSlide className={projectStyle.swiperSlide}>
                                 <img src={proj3_1} alt="" style={{width: '300px', height: '100%', borderRadius: '10px'}}/>
@@ -641,7 +642,25 @@ let Projects = () => {
                     justify-content-center
                     align-items-center 
                     px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls1} alt="" className={projectStyle.ls1} />
+                        <Swiper
+                        className={projectStyle.swiper4}
+                        effect='flip'
+                        loop={true}
+                        modules={[Pagination, EffectFlip]}
+                        flipEffect={{
+                            limitRotation: true,
+                            slideShadows: true,
+                        }}
+                        grabCursor={true}
+                        pagination={{clickable: true}}
+                        >
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj4} alt="" style={{width: '300px', height: '100%', borderRadius: '10px'}} />
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj4_1} alt="" className={projectStyle.imgProj} />
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                     {/* Description */}
                     <article className={`d-flex 
