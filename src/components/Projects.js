@@ -301,11 +301,14 @@ let Projects = () => {
                                     in the entire template of the Class Reading Profile.
                                 </p>
                                 <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <ul>
+                                    <li>VBA Developer</li>
+                                    <li>Data Analyst</li>
+                                </ul>
                                 <p className={projectStyle.p}>
-                                    <ul>
-                                        <li>VBA Developer</li>
-                                        <li>Data Analsyt</li>
-                                    </ul>
+                                    I am responsible for coding the workbook in excel and analyzing the data for the
+                                    right calculations of all the formulas embedded within the spreadsheets of the 
+                                    workbook.
                                 </p>
                             </article>
                             {/* Technologies and Tools Used | Outcomes and Achievements */}
@@ -316,12 +319,10 @@ let Projects = () => {
                             mx-4
                             `}>
                                 <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
-                                <p className={projectStyle.p}>
-                                    <ul>
-                                        <li>Visual Basic for Applications</li>
-                                        <li>Microsoft Excel</li>
-                                    </ul>
-                                </p>
+                                <ul>
+                                    <li>Visual Basic for Applications</li>
+                                    <li>Microsoft Excel</li>
+                                </ul>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
                                     I successfully automated the Philippine Informal Reading Inventory form and
@@ -353,16 +354,16 @@ let Projects = () => {
                         className={projectStyle.swiper1}
                         >
                             <SwiperSlide>
-                                <img src={proj1_1} alt="" className={projectStyle.imgDummy}/>
+                                <img src={proj1_1} alt="" className={projectStyle.imgProj}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={proj1_2} alt="" className={projectStyle.imgDummy}/>
+                                <img src={proj1_2} alt="" className={projectStyle.imgProj}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={proj1_3} alt="" className={projectStyle.imgDummy}/>
+                                <img src={proj1_3} alt="" className={projectStyle.imgProj}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={proj1_4} alt="" className={projectStyle.imgDummy}/>
+                                <img src={proj1_4} alt="" className={projectStyle.imgProj}/>
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -388,49 +389,128 @@ let Projects = () => {
                         grabCursor={true}
                         modules={[EffectCards, Pagination]}
                         pagination={{clickable: true}}
+                        className={projectStyle.swiper2}
                         >
                             <SwiperSlide>
-                                <img src={proj2_1} alt="" />                                
+                                <img src={proj2_1} alt="" className={projectStyle.imgProj}/>                                
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={proj2_2} alt="" />                                
+                                <img src={proj2_2} alt="" className={projectStyle.imgProj}/>                                
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={proj2_3} alt="" />                                
+                                <img src={proj2_3} alt="" className={projectStyle.imgProj}/>                                
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={proj2} alt="" />                                
+                                <img src={proj2_4} alt="" className={projectStyle.imgProj}/>                                
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="" alt="" />                                
+                                <img src={proj2_5} alt="" className={projectStyle.imgProj}/>                                
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="" alt="" />                                
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img src="" alt="" />                                
+                                <img src={proj2_6} alt="" className={projectStyle.imgProj}/>                                
                             </SwiperSlide>
                         </Swiper>
                     </div>
                     {/* Description */}
-                    <article className={`d-flex 
+                    <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Introduction</h1>
-                        <p className={projectStyle.p}>
-                            We now live in a world where the digital
-                            landscape is rapidly evolving. As technology
-                            continues to advance, our world becomes more
-                            interconnected, creating endless opportunities
-                            for growth and transformation. In this dynamic
-                            environment, I am proud to present my portfolio,
-                            a testament to my journey in harnessing the power
-                            of digital solutions to encourage advancements
-                            and make an impact.
-                        </p>
-                    </article>
+                        <h1 className={projectStyle.h1}>Spoken</h1>
+                        
+                        <section className={`
+                        d-flex flex-row
+                        justify-content-center
+                        align-items-center
+                        gap-4
+                        `}>
+                            {/* Description | Role and Responsibilities */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            `}>
+                                <h2 className={projectStyle.h2}>Description</h2>
+                                <p className={projectStyle.p}>
+                                    This project is a sign language translator desktop
+                                    application for aiding mute and deaf individuals
+                                    to communicate with ease, with high availability,
+                                    and to eliminate communication barrier among others.
+                                    This software and hardware development opens up
+                                    huge opportunities for deaf and mute individuals and
+                                    help them build up their confidence when speaking
+                                    their hearts out in front of the masses. This project
+                                    also highlights the use of deep learning algorithm
+                                    which operates with less human intervention.
+                                </p>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <p className={projectStyle.p}>
+                                    <ul>
+                                        <li>Full-stack Machine Learning Developer</li>
+                                        <li>Desktop Application Developer</li>
+                                    </ul>
+                                    <p className={projectStyle.p}>
+                                        I am responsible for coding the data preprocessing pipeline
+                                        which includes data acquisition, data organization, data
+                                        processing, feature extraction, data manipulation for
+                                        acquiring the best train and test datasets configuration,
+                                        the first machine learning algorithm during the phase one of
+                                        our prototype, the evaluation metrics, and the algorithm for
+                                        predicting live for testing the model to new and unseen data.
+                                        I also developed the graphical user interface where the
+                                        deep learning algorithm is integrated into.
+                                    </p>
+                                </p>
+                            </article>
+                            {/* Technologies and Tools Used | Outcomes and Achievements */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            mx-4
+                            `}>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <p className={projectStyle.p}>
+                                    <div className={`
+                                    d-flex
+                                    flex-row
+                                    justify-content-center
+                                    align-items-start
+                                    `}>
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>GitHub</li>
+                                            <li>MediaPipe</li>
+                                        </ul>
+                                        <ul>
+                                            <li>TensorFlow</li>
+                                            <li>Keras</li>
+                                            <li>OpenCV</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Pandas</li>
+                                            <li>Scikit-learn</li>
+                                            <li>NumPy</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tkinter</li>
+                                            <li>CustomTkinter</li>
+                                            <li>AwesomeTkinter</li>
+                                        </ul>
+                                    </div>
+                                </p>
+                                <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
+                                <p className={projectStyle.p}>
+                                    I have successfully improved my skills on full-stack machine
+                                    learning development and desktop application development. We
+                                    sucessfully tested our project on actual instructor of deaf
+                                    and mute individuals and was satisfied with our dedication
+                                    of aiding these individuals.
+                                </p>
+                            </article>
+                        </section>
+                    </section>
                 </section>
 
                 {/* 3rd Project */}
