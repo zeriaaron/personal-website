@@ -612,7 +612,7 @@ let Projects = () => {
                         pagination={{clickable: true}}
                         >
                             <SwiperSlide className={projectStyle.swiperSlide}>
-                                <img src={proj3_1} alt="" style={{width: '300px', height: '100%'}}/>
+                                <img src={proj3_1} alt="" style={{width: '300px', height: '100%', borderRadius: '10px'}}/>
                             </SwiperSlide>
                             <SwiperSlide className={projectStyle.swiperSlide}>
                                 <img src={proj3_2} alt="" className={projectStyle.imgProj}/>
