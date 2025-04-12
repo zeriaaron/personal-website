@@ -882,27 +882,129 @@ let Projects = () => {
                     justify-content-center
                     align-items-center 
                     px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls1} alt="" className={projectStyle.ls1} />
+                        <Swiper
+                        modules={[Pagination]}
+                        direction='vertical'
+                        grabCursor={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        className={projectStyle.swiper6}
+                        loop={true}
+                        >
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj6_1} alt="" style={{width: '500px', height: '100%', borderRadius: '10px'}}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj6_2} alt="" style={{width: '500px', height: '100%', borderRadius: '10px'}}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj6_3} alt="" style={{width: '500px', height: '100%', borderRadius: '10px'}}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj6_4} alt="" style={{width: '500px', height: '100%', borderRadius: '10px'}}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj6_5} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj6_6} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                     {/* Description */}
-                    <article className={`d-flex 
+                    <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Introduction</h1>
-                        <p className={projectStyle.p}>
-                            We now live in a world where the digital
-                            landscape is rapidly evolving. As technology
-                            continues to advance, our world becomes more
-                            interconnected, creating endless opportunities
-                            for growth and transformation. In this dynamic
-                            environment, I am proud to present my portfolio,
-                            a testament to my journey in harnessing the power
-                            of digital solutions to encourage advancements
-                            and make an impact.
-                        </p>
-                    </article>
+                        <h1 className={projectStyle.h1}>CheckMe!</h1>
+                        
+                        <section className={`
+                        d-flex flex-row
+                        justify-content-center
+                        align-items-center
+                        gap-4
+                        `}>
+                            {/* Description | Role and Responsibilities */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            `}>
+                                <h2 className={projectStyle.h2}>Description</h2>
+                                <p className={projectStyle.p}>
+                                    This project is a desktop application for teachers to check their quizzes with a multiple
+                                    choice type of questions. This software features functionalities such as input validation,
+                                    input view, and output saving. This also provides flexbility on the output file as the
+                                    file type, saving location, file name, and file layout can be customized based on the users'
+                                    preferences. The software is accompanied with a website integrated into the application to
+                                    provide documentation, download and information about me. It also has an installed software
+                                    product review form for users to rate the program.
+                                </p>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <p className={projectStyle.p}>
+                                    <ul>
+                                        <li>Front-end Web Developer</li>
+                                        <li>Desktop Application Developer</li>
+                                    </ul>
+                                    <p className={projectStyle.p}>
+                                        I am responsible for coding the software application by utilizing PyQt5 and the website
+                                        that is embedded within the application using HTML and CSS. I am also responsbile for 
+                                        the user interface design to make a visually appealing view of the program and the website.
+                                        Lastly, I wa also responsible in creating the Google Form for the evaluation of the application.
+                                    </p>
+                                </p>
+                            </article>
+                            {/* Technologies and Tools Used | Outcomes and Achievements */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            mx-4
+                            `}>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <p className={projectStyle.p}>
+                                    <div className={`
+                                    d-flex
+                                    flex-row
+                                    justify-content-center
+                                    align-items-start
+                                    `}>
+                                        <div
+                                        className={`
+                                        d-flex
+                                        flex-row
+                                        justify-content-center
+                                        align-items-start
+                                        `}
+                                        >
+                                            <ul>
+                                                <li>Python</li>
+                                                <li>PyQt5</li>
+                                                <li>QtDesigner</li>
+                                            </ul>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Google Form</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </p>
+                                <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
+                                <p className={projectStyle.p}>
+                                    I have successfully created the desktop application for checking
+                                    students' quizes with a multiple choice type of questions. I was
+                                    able to hone my skill on desktop application development by 
+                                    practicing my programming skills on utilizing frameworks such as
+                                    PyQt5 using Qt tools such as QtDesigner, programming language such
+                                    as Python. Along with that, I was able to improve my kill on front-end
+                                    web development by creating a website using HTML and CSS as well.
+                                </p>
+                            </article>
+                        </section>
+                    </section>
                 </section>
 
                 {/* 7th Project */}
