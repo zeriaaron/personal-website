@@ -21,3 +21,11 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: skyblue !important;
+}
