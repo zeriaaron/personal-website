@@ -74,19 +74,34 @@
 .swiper1 {
     width: 700px;
     height: 500px;
+    margin: 0;
+    border-radius: 10px;
 }
 
 .swiper2 {
     width: 700px;
     height: 500px;
+    margin: 0;
+    border-radius: 10px;
 }
 
 .swiper3 {
     width: 700px;
     height: 500px;
+    margin: 0;
+    border-radius: 10px;
 }
 
 .swiper4 {
     width: 700px;
     height: 500px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.swiper5 {
+    width: 700px;
+    height: 500px;
+    margin: 0;
+    border-radius: 10px;
 }

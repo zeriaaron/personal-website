@@ -15,7 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { 
     Navigation, Pagination, FreeMode, Autoplay, 
     EffectCoverflow, Grid, EffectCube, EffectFlip,
-    EffectCards
+    EffectCards, EffectCreative
 } from 'swiper/modules'
 
 import 'swiper/swiper-bundle.css'
@@ -746,31 +746,125 @@ let Projects = () => {
                 justify-content-evenly
                 align-items-center`}>
                     {/* Description */}
-                    <article className={`d-flex 
+                    <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Introduction</h1>
-                        <p className={projectStyle.p}>
-                            We now live in a world where the digital
-                            landscape is rapidly evolving. As technology
-                            continues to advance, our world becomes more
-                            interconnected, creating endless opportunities
-                            for growth and transformation. In this dynamic
-                            environment, I am proud to present my portfolio,
-                            a testament to my journey in harnessing the power
-                            of digital solutions to encourage advancements
-                            and make an impact.
-                        </p>
-                    </article>
+                        <h1 className={projectStyle.h1}>Frequency Distribution Table</h1>
+                        
+                        <section className={`
+                        d-flex flex-row
+                        justify-content-center
+                        align-items-center
+                        gap-4
+                        `}>
+                            {/* Description | Role and Responsibilities */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            `}>
+                                <h2 className={projectStyle.h2}>Description</h2>
+                                <p className={projectStyle.p}>
+                                    This project is a frequency distribution table with graphical user interface
+                                    that highlights the different components that are used to interpret data of 
+                                    a frequency dsitribution along with additional features such as bar and 
+                                    logarithmic plots. Furthermore, it has a data analysis notes panel for logging
+                                    activities in order for data analysts to analyze, interpret, and observe the
+                                    results.
+                                </p>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <p className={projectStyle.p}>
+                                    <ul>
+                                        <li>Data Analyst</li>
+                                        <li>Desktop Application Developer</li>
+                                    </ul>
+                                    <p className={projectStyle.p}>
+                                        I am accountable for developing the software by creating GUI programmatically
+                                        using pre MATLAB code. I was also responsible for analyzing and understanding
+                                        the data, and components that should be accounted to build the frequency
+                                        distribution table properly and effectively.
+                                    </p>
+                                </p>
+                            </article>
+                            {/* Technologies and Tools Used | Outcomes and Achievements */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            mx-4
+                            `}>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <p className={projectStyle.p}>
+                                    <div className={`
+                                    d-flex
+                                    flex-row
+                                    justify-content-center
+                                    align-items-start
+                                    `}>
+                                        <ul>
+                                            <li>MATLAB</li>
+                                        </ul>
+                                    </div>
+                                </p>
+                                <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
+                                <p className={projectStyle.p}>
+                                    I have successfully honed my skills on programming in MATLAB and desktop
+                                    application development by creating the GUI of the program in a programmatic
+                                    manner. I was also able to analyze the data of a frequency distribution table
+                                    including its components and different data plots that are available in MATLAB
+                                    to interpret data even further and improve my craft on data analysis overall.
+                                </p>
+                            </article>
+                        </section>
+                    </section>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
                     justify-content-center
                     align-items-center 
                     px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls2} alt="" className={projectStyle.ls1} />
+                        <Swiper
+                        effect='creative'
+                        modules={[Pagination, EffectCreative]}
+                        grabCursor={true}
+                        pagination={{clickable: true}}
+                        className={projectStyle.swiper5}
+                        creativeEffect={{
+                            limitProgress: 1,
+                            prev: {
+                                shadow: true,
+                                translate: ['-125%', 0, -800],
+                                rotate: [0, 0, -90],
+                            },
+                            next: {
+                                shadow: true,
+                                translate: ['125%', 0, -800],
+                                rotate: [0, 0, 90],
+                            },
+                            perspective: true,
+                            progressMultiplier: 1,
+                            shadowPerProgress: false
+                        }}
+                        loop={true}
+                        >
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj5_1} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj5_2} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj5_3} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj5_4} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj5_5} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </section>
 
