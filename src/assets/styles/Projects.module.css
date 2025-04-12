@@ -1,6 +1,13 @@
-.h1, .h2, .h3 {
+.h1  {
     text-wrap: nowrap;
     color: skyblue;
+    font-weight: 700;
+    /* margin: 0; */
+}
+
+.h2, .h3 {
+    text-wrap: nowrap;
+    color:skyblue;
     /* margin: 0; */
 }
 
