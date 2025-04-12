@@ -13,7 +13,7 @@ body {
     background-color: rgb(30, 30, 30);
 }
 
-h1, h2, p {
+h1, h2, p, ul, li {
     color: white;
 }
 
