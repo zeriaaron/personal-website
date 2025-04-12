@@ -15,7 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { 
     Navigation, Pagination, FreeMode, Autoplay, 
     EffectCoverflow, Grid, EffectCube, EffectFlip,
-    EffectCards, EffectCreative
+    EffectCards, EffectCreative, EffectFade
 } from 'swiper/modules'
 
 import 'swiper/swiper-bundle.css'
@@ -654,9 +654,9 @@ let Projects = () => {
                         grabCursor={true}
                         pagination={{clickable: true}}
                         >
-                            <SwiperSlide className={projectStyle.swiperSlide}>
+                            {/* <SwiperSlide className={projectStyle.swiperSlide}>
                                 <img src={proj4} alt="" style={{width: '300px', height: '100%', borderRadius: '10px'}} />
-                            </SwiperSlide>
+                            </SwiperSlide> */}
                             <SwiperSlide className={projectStyle.swiperSlide}>
                                 <img src={proj4_1} alt="" className={projectStyle.imgProj} />
                             </SwiperSlide>
@@ -1011,33 +1011,114 @@ let Projects = () => {
                 <section id='project7' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
-                align-items-center`}>
+                align-items-center m-5`}>
                     {/* Description */}
-                    <article className={`d-flex 
+                    <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Introduction</h1>
-                        <p className={projectStyle.p}>
-                            We now live in a world where the digital
-                            landscape is rapidly evolving. As technology
-                            continues to advance, our world becomes more
-                            interconnected, creating endless opportunities
-                            for growth and transformation. In this dynamic
-                            environment, I am proud to present my portfolio,
-                            a testament to my journey in harnessing the power
-                            of digital solutions to encourage advancements
-                            and make an impact.
-                        </p>
-                    </article>
+                        <h1 className={projectStyle.h1}>Pulo Diezmo Road Traffic Lights</h1>
+                        
+                        <section className={`
+                        d-flex flex-row
+                        justify-content-center
+                        align-items-center
+                        gap-4
+                        `}>
+                            {/* Description | Role and Responsibilities */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            `}>
+                                <h2 className={projectStyle.h2}>Description</h2>
+                                <p className={projectStyle.p}>
+                                    This project is a miniature traffic lights of Pulo Diezmo Road at Laguna. It demonstrates
+                                    how the traffic lights in the said road works. It comprises of semiconductor devices that
+                                    are controlled by Arduino Uno, a microcontroller that can be coded and control the
+                                    behavior of the semiconductor devices.
+                                </p>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <p className={projectStyle.p}>
+                                    <ul>
+                                        <li>Arduino Developer</li>
+                                        <li>Electronics Engineer</li>
+                                        <li>Electronics Technician</li>
+                                    </ul>
+                                    <p className={projectStyle.p}>
+                                        I am responsible for coding the timing, execution, functionality, and process of the hardware
+                                        through coding it in Arduino and utilizing the Arduino Uno. I was also responsibel for setting
+                                        up the hardware by carefully installing semiconductor devices, and meticulously organizing
+                                        the wires in the breadboard, so that it would reflect the real traffic lights in Pulo Diezmo
+                                        Road.
+                                    </p>
+                                </p>
+                            </article>
+                            {/* Technologies and Tools Used | Outcomes and Achievements */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            mx-4
+                            `}>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <p className={projectStyle.p}>
+                                    <div className={`
+                                    d-flex
+                                    flex-row
+                                    justify-content-center
+                                    align-items-start
+                                    `}>
+                                        <div
+                                        className={`
+                                        d-flex
+                                        flex-row
+                                        justify-content-center
+                                        align-items-start
+                                        `}
+                                        >
+                                            <ul>
+                                                <li>Arduino IDE</li>
+                                                <li>Arduino Uno</li>
+                                                <li>C++</li>
+                                                <li>Semiconductor devices</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </p>
+                                <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
+                                <p className={projectStyle.p}>
+                                    Ih have successfully improved my skills on Electronics Engineering by controlling
+                                    the semiconductor devices that are used as the hardware of the project. I also
+                                    developed my programming skills by utilizing Arduino IDE and coding using Arduino
+                                    which uses a variant of the C++ programming language. I also developed my logical
+                                    thinking by planning how the timing, execution, and process of the miniature traffic
+                                    lights would imitate the real world traffic lights properly.
+                                </p>
+                            </article>
+                        </section>
+                    </section>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
                     justify-content-center
                     align-items-center 
                     px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls2} alt="" className={projectStyle.ls1} />
+                        <Swiper
+                        className={projectStyle.swiper7}
+                        effect='fade'
+                        modules={[Pagination, EffectFade]}
+                        grabCursor={true}
+                        pagination={{clickable: true}}
+                        >
+                            {/* <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj7} alt="" style={{width: '300px', height: '100%', borderRadius: '10px'}}/>
+                            </SwiperSlide> */}
+                            <SwiperSlide className={projectStyle.swiperSlide}>
+                                <img src={proj7_1} alt="" className={projectStyle.imgProj}/>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </section>
             </main>
