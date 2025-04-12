@@ -1,12 +1,24 @@
 import projectStyle from '../assets/styles/Projects.module.css'
 import { animated, useSpring, config, useInView } from '@react-spring/web'
 import { ls1, ls2, ls3, ls4, ls5, ls6, ls7 } from '../assets/images/about'
-import { intro, mission1, mission2, mission3, mission4 } from '../assets/images/projects'
+import {
+    intro, mission1, mission2, mission3, mission4,
+    proj1, proj1v2, proj1_1, proj1_2, proj1_3, proj1_4, proj1_5, proj1_6,
+    proj2, proj2v2, proj2_1, proj2_2, proj2_3, proj2_4, proj2_5, proj2_6,
+    proj3, proj3v2, proj3_1, proj3_2, proj3_3, proj3_4,
+    proj4, proj4v2, proj4_1,
+    proj5, proj5v2, proj5_1, proj5_2, proj5_3, proj5_4, proj5_5,
+    proj6, proj6v2, proj6_1, proj6_2, proj6_3, proj6_4, proj6_5, proj6_6,
+    proj7, proj7v2, proj7_1
+} from '../assets/images/projects'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, FreeMode, Autoplay, EffectCoverflow, Grid } from 'swiper/modules'
+import { 
+    Navigation, Pagination, FreeMode, Autoplay, 
+    EffectCoverflow, Grid, EffectCube,
+    EffectCards
+} from 'swiper/modules'
 
-import 'swiper/css'
-import 'swiper/css/navigation'
+import 'swiper/swiper-bundle.css'
 
 
 let Projects = () => {
@@ -199,17 +211,17 @@ let Projects = () => {
                 {/* Carousel Images of the Projects */}
                 <Swiper 
                 modules={[FreeMode, Autoplay, EffectCoverflow, Pagination]}
-                // autoplay={{delay: 1000}}
+                autoplay={{delay: 5000}}
                 centeredSlides={true}
                 slidesPerView={5}
                 spaceBetween={1}
-                loop={true}
                 pagination={{clickable: true}}
+                loop={true}
                 effect='coverflow'
                 coverflowEffect={{
                     rotate: 0,
-                    stretch: 100,
-                    depth: 50,
+                    stretch: 70,
+                    depth: 30,
                     modifier: 2.5,
                     slideShadows: false,
                 }}
@@ -218,37 +230,37 @@ let Projects = () => {
                 >
                     <SwiperSlide className={projectStyle.swiperSlide}>
                         <a href="#project1">
-                            <img src={ls7} alt=""/>
+                            <img src={proj1v2} alt="Philippine Informal Reading Inventory"/>
                         </a>
                     </SwiperSlide>
                     <SwiperSlide className={projectStyle.swiperSlide}>
                         <a href="#project2">
-                            <img src={ls5} alt=""/>
+                            <img src={proj2v2} alt=""/>
                         </a>
                     </SwiperSlide>
                     <SwiperSlide className={projectStyle.swiperSlide}>
                         <a href="#project3">
-                            <img src={ls6} alt=""/>
+                            <img src={proj3v2} alt=""/>
                         </a>
                     </SwiperSlide>
                     <SwiperSlide className={projectStyle.swiperSlide}>
                         <a href="#project4">
-                            <img src={ls7} alt=""/>
+                            <img src={proj4v2} alt=""/>
                         </a>
                     </SwiperSlide>
                     <SwiperSlide className={projectStyle.swiperSlide}>
                         <a href="#project5">
-                            <img src={ls5} alt=""/>
+                            <img src={proj5v2} alt=""/>
                         </a>
                     </SwiperSlide>
                     <SwiperSlide className={projectStyle.swiperSlide}>
                         <a href="#project6">
-                            <img src={ls6} alt=""/>
+                            <img src={proj6v2} alt=""/>
                         </a>
                     </SwiperSlide>
                     <SwiperSlide className={projectStyle.swiperSlide}>
                         <a href="#project7">
-                            <img src={ls5} alt=""/>
+                            <img src={proj7v2} alt=""/>
                         </a>
                     </SwiperSlide>
                 </Swiper>
@@ -260,32 +272,99 @@ let Projects = () => {
                 align-items-center
                 mt-5
                 `}>
-                    {/* Description */}
-                    <article className={`d-flex 
+                    <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Introduction</h1>
-                        <p className={projectStyle.p}>
-                            We now live in a world where the digital
-                            landscape is rapidly evolving. As technology
-                            continues to advance, our world becomes more
-                            interconnected, creating endless opportunities
-                            for growth and transformation. In this dynamic
-                            environment, I am proud to present my portfolio,
-                            a testament to my journey in harnessing the power
-                            of digital solutions to encourage advancements
-                            and make an impact.
-                        </p>
-                    </article>
-                    {/* Image */}
-                    <div className={`d-flex 
+                        <h1 className={projectStyle.h1}>Philippine Informal Reading Inventory Automation</h1>
+                        
+                        <section className={`
+                        d-flex flex-row
+                        justify-content-center
+                        align-items-center
+                        gap-4
+                        `}>
+                            {/* Description | Role and Responsibilities */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            `}>
+                                <h2 className={projectStyle.h2}>Description</h2>
+                                <p className={projectStyle.p}>
+                                    This project which is a new automated class reading profile in English is
+                                    an originally developed program in Microsoft Excel using Visual Basic for
+                                    Applications programming language and Formulas. VBA's main function is for
+                                    the design and aesthetic of the template, and to enhance the features of
+                                    Microsoft Excel. Formulas is used to calculate the complex computation involved
+                                    in the entire template of the Class Reading Profile.
+                                </p>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <p className={projectStyle.p}>
+                                    <ul>
+                                        <li>VBA Developer</li>
+                                        <li>Data Analsyt</li>
+                                    </ul>
+                                </p>
+                            </article>
+                            {/* Technologies and Tools Used | Outcomes and Achievements */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            mx-4
+                            `}>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <p className={projectStyle.p}>
+                                    <ul>
+                                        <li>Visual Basic for Applications</li>
+                                        <li>Microsoft Excel</li>
+                                    </ul>
+                                </p>
+                                <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
+                                <p className={projectStyle.p}>
+                                    I successfully automated the Philippine Informal Reading Inventory form and
+                                    added new and advanced features to aid teachers' data analysis and visualization
+                                    of their students' reading comprehension data. I was also given the opportunity
+                                    to submit it through the Divisions' Office with the help of my Mother. As of today,
+                                    there are over 150 teachers who are utilizing the form and benefiting from the work
+                                    I have done at Mamatid Elementary School.
+                                </p>
+                            </article>
+                        </section>
+                    </section>
+
+                    {/* Image - Cube */} 
+                    <div className={`
+                    d-flex
                     flex-row
                     justify-content-center
-                    align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls2} alt="" className={projectStyle.ls1} />
+                    align-items-center    
+                    p-4
+                    `}>
+                        <Swiper
+                        modules={[Pagination, EffectCube]}
+                        cubeEffect={{shadow: true, shadowOffset: 20, shadowScale: 0.94, slideShadows: true}}
+                        effect='cube'
+                        loop={true}
+                        grabCursor={true}
+                        pagination={{clickable: true}}
+                        className={projectStyle.swiper1}
+                        >
+                            <SwiperSlide>
+                                <img src={proj1_1} alt="" className={projectStyle.imgDummy}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj1_2} alt="" className={projectStyle.imgDummy}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj1_3} alt="" className={projectStyle.imgDummy}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj1_4} alt="" className={projectStyle.imgDummy}/>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </section>
 
@@ -303,7 +382,35 @@ let Projects = () => {
                     justify-content-center
                     align-items-center 
                     px-4 ${projectStyle.imgContainer1}`}>
-                        <img src={ls1} alt="" className={projectStyle.ls1} />
+                        {/* <img src={ls1} alt="" className={projectStyle.ls1} /> */}
+                        <Swiper
+                        effect='cards'
+                        grabCursor={true}
+                        modules={[EffectCards, Pagination]}
+                        pagination={{clickable: true}}
+                        >
+                            <SwiperSlide>
+                                <img src={proj2_1} alt="" />                                
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj2_2} alt="" />                                
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj2_3} alt="" />                                
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={proj2} alt="" />                                
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="" alt="" />                                
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="" alt="" />                                
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="" alt="" />                                
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                     {/* Description */}
                     <article className={`d-flex 
