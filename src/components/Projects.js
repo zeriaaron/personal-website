@@ -524,7 +524,7 @@ let Projects = () => {
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Spoken</h1>
+                        <h1 className={projectStyle.h1}>Smart Calculator</h1>
                         
                         <section className={`
                         d-flex flex-row
@@ -663,24 +663,78 @@ let Projects = () => {
                         </Swiper>
                     </div>
                     {/* Description */}
-                    <article className={`d-flex 
+                    <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
                     p-4 ${projectStyle.mainSecContainer}`}>
-                        <h1 className={projectStyle.h1}>Introduction</h1>
-                        <p className={projectStyle.p}>
-                            We now live in a world where the digital
-                            landscape is rapidly evolving. As technology
-                            continues to advance, our world becomes more
-                            interconnected, creating endless opportunities
-                            for growth and transformation. In this dynamic
-                            environment, I am proud to present my portfolio,
-                            a testament to my journey in harnessing the power
-                            of digital solutions to encourage advancements
-                            and make an impact.
-                        </p>
-                    </article>
+                        <h1 className={projectStyle.h1}>Spoken</h1>
+                        
+                        <section className={`
+                        d-flex flex-row
+                        justify-content-center
+                        align-items-center
+                        gap-4
+                        `}>
+                            {/* Description | Role and Responsibilities */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            `}>
+                                <h2 className={projectStyle.h2}>Description</h2>
+                                <p className={projectStyle.p}>
+                                    This project is a software which features many advanced functions
+                                    than a standard scientific calculator. This program has 50 functions
+                                    in total which highlights the basic commands functions, different types
+                                    of equations and polynomials, graphing 2D plots, graphing 3D plots,
+                                    and higher mathematical operations that MATLAB provides.
+                                </p>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <p className={projectStyle.p}>
+                                    <ul>
+                                        <li>Programmatic GUI Developer</li>
+                                        <li>Mathematician</li>
+                                    </ul>
+                                    <p className={projectStyle.p}>
+                                        I am responsible for hard coding the entire functionalities and GUI
+                                        of the smart calculator application without relying on the App Designer
+                                        of MATLAB. I am also in charge of understanding the mathematical
+                                        operations used in the project for the operations to work as intended.
+                                    </p>
+                                </p>
+                            </article>
+                            {/* Technologies and Tools Used | Outcomes and Achievements */}
+                            <article className={`
+                            d-flex flex-column
+                            justify-content-center
+                            align-items-start
+                            mx-4
+                            `}>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <p className={projectStyle.p}>
+                                    <div className={`
+                                    d-flex
+                                    flex-row
+                                    justify-content-center
+                                    align-items-start
+                                    `}>
+                                        <ul>
+                                            <li>MATLAB</li>
+                                        </ul>
+                                    </div>
+                                </p>
+                                <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
+                                <p className={projectStyle.p}>
+                                    I was able to completely and manually coded the GUI of the smart calculator
+                                    along with coding its functionalities. Also, I was able to showcase my
+                                    understanding on different mathematical operations and graphs available in
+                                    MATLAB, and improve my desktop application development skills by providing a 
+                                    graphical user interface for the program.
+                                </p>
+                            </article>
+                        </section>
+                    </section>
                 </section>
 
                 {/* 5th Project */}
