@@ -948,17 +948,15 @@ let Projects = () => {
                                     product review form for users to rate the program.
                                 </p>
                                 <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <ul>
+                                    <li>Front-end Web Developer</li>
+                                    <li>Desktop Application Developer</li>
+                                </ul>
                                 <p className={projectStyle.p}>
-                                    <ul>
-                                        <li>Front-end Web Developer</li>
-                                        <li>Desktop Application Developer</li>
-                                    </ul>
-                                    <p className={projectStyle.p}>
-                                        I am responsible for coding the software application by utilizing PyQt5 and the website
-                                        that is embedded within the application using HTML and CSS. I am also responsbile for 
-                                        the user interface design to make a visually appealing view of the program and the website.
-                                        Lastly, I wa also responsible in creating the Google Form for the evaluation of the application.
-                                    </p>
+                                    I am responsible for coding the software application by utilizing PyQt5 and the website
+                                    that is embedded within the application using HTML and CSS. I am also responsbile for 
+                                    the user interface design to make a visually appealing view of the program and the website.
+                                    Lastly, I wa also responsible in creating the Google Form for the evaluation of the application.
                                 </p>
                             </article>
                             {/* Technologies and Tools Used | Outcomes and Achievements */}
@@ -1017,93 +1015,66 @@ let Projects = () => {
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center m-5`}>
-                    {/* Description */}
-                    <section className={`d-flex 
+                    {/* Information */}
+                    <section className={`
+                    d-flex
                     flex-column
-                    justify-content-center
-                    align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}    
+                    `}>
                         <h1 className={projectStyle.h1}>Pulo Diezmo Road Traffic Lights</h1>
-                        
-                        <section className={`
-                        d-flex flex-row
-                        justify-content-center
-                        align-items-start
-                        gap-4
-                        `}>
-                            {/* Description | Role and Responsibilities */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
-                                    This project is a miniature traffic lights of Pulo Diezmo Road at Laguna. It demonstrates
-                                    how the traffic lights in the said road works. It comprises of semiconductor devices that
-                                    are controlled by Arduino Uno, a microcontroller that can be coded and control the
+                                    This project is a miniature traffic lights of Pulo Diezmo Road
+                                    at Laguna. It demonstrates how the traffic lights in the said
+                                    road works. It comprises of semiconductor devices that are controlled
+                                    by Arduino Uno, a microcontroller that can be coded and control the
                                     behavior of the semiconductor devices.
                                 </p>
+                            </article>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <ul>
+                                    <li>Arduino IDE</li>
+                                    <li>Arduino Uno</li>
+                                    <li>Semiconductor devices</li>
+                                    <li>C++</li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <ul>
+                                    <li>Arduino Developer</li>
+                                    <li>Electronics Engineer</li>
+                                    <li>Electronics Technician</li>
+                                </ul>
                                 <p className={projectStyle.p}>
-                                    <ul>
-                                        <li>Arduino Developer</li>
-                                        <li>Electronics Engineer</li>
-                                        <li>Electronics Technician</li>
-                                    </ul>
-                                    <p className={projectStyle.p}>
-                                        I am responsible for coding the timing, execution, functionality, and process of the hardware
-                                        through coding it in Arduino and utilizing the Arduino Uno. I was also responsibel for setting
-                                        up the hardware by carefully installing semiconductor devices, and meticulously organizing
-                                        the wires in the breadboard, so that it would reflect the real traffic lights in Pulo Diezmo
-                                        Road.
-                                    </p>
+                                    I am responsible for coding the timing, execution, functionality, and
+                                    process of the hardware through coding it in Arduino and utilizing the
+                                    Arduino Uno. I was also responsible for setting up the hardware by carefully
+                                    installing semiconductor devices, and meticulously organizing the wires in
+                                    the breadboard, so that it would reflect the real traffic lights in Pulo
+                                    Diezmo Road.
                                 </p>
                             </article>
-                            {/* Technologies and Tools Used | Outcomes and Achievements */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            mx-4
-                            `}>
-                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
-                                <p className={projectStyle.p}>
-                                    <div className={`
-                                    d-flex
-                                    flex-row
-                                    justify-content-center
-                                    align-items-start
-                                    `}>
-                                        <div
-                                        className={`
-                                        d-flex
-                                        flex-row
-                                        justify-content-center
-                                        align-items-start
-                                        `}
-                                        >
-                                            <ul>
-                                                <li>Arduino IDE</li>
-                                                <li>Arduino Uno</li>
-                                                <li>C++</li>
-                                                <li>Semiconductor devices</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </p>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
-                                    Ih have successfully improved my skills on Electronics Engineering by controlling
-                                    the semiconductor devices that are used as the hardware of the project. I also
-                                    developed my programming skills by utilizing Arduino IDE and coding using Arduino
-                                    which uses a variant of the C++ programming language. I also developed my logical
-                                    thinking by planning how the timing, execution, and process of the miniature traffic
-                                    lights would imitate the real world traffic lights properly.
+                                    I have successfully improved my skills on Electronics Engineering by
+                                    controlling the semiconductor devices that are used as the hardware of the 
+                                    project. I also developed my programming skills by utilizing Arduino IDE and
+                                    coding using Arduino which uses a variant of the C++ programming language. I
+                                    also developed my logical thinking by planning how the timing, execution, and
+                                    process of the minature traffic lights would imitate the real world traffic
+                                    lights properly.
                                 </p>
                             </article>
                         </section>
                     </section>
+                    
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
