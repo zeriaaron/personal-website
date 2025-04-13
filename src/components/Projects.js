@@ -264,32 +264,22 @@ let Projects = () => {
                     </SwiperSlide>
                 </Swiper>
 
-                {/* 1st Project */}
+                {/* 1st Project - Phil IRI */}
                 <section id='project1' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center
-                mt-5
+                m-5
                 `}>
                     <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}`}>
                         <h1 className={projectStyle.h1}>Philippine Informal Reading Inventory Automation</h1>
                         
-                        <section className={`
-                        d-flex flex-row
-                        justify-content-center
-                        align-items-start
-                        gap-4
-                        `}>
-                            {/* Description | Role and Responsibilities */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
                                     This project which is a new automated class reading profile in English is
@@ -299,6 +289,17 @@ let Projects = () => {
                                     Microsoft Excel. Formulas is used to calculate the complex computation involved
                                     in the entire template of the Class Reading Profile.
                                 </p>
+                            </article>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <ul>
+                                    <li>Visual Basic for Applications</li>
+                                    <li>Microsoft Excel</li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
                                 <ul>
                                     <li>VBA Developer</li>
@@ -310,18 +311,7 @@ let Projects = () => {
                                     workbook.
                                 </p>
                             </article>
-                            {/* Technologies and Tools Used | Outcomes and Achievements */}
-                            <article className={`
-                            d-flex 
-                            flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
-                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
-                                <ul>
-                                    <li>Visual Basic for Applications</li>
-                                    <li>Microsoft Excel</li>
-                                </ul>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
                                     I successfully automated the Philippine Informal Reading Inventory form and
@@ -374,13 +364,14 @@ let Projects = () => {
                     </div>
                 </section>
 
-                {/* 2nd Project */}
+                {/* 2nd Project - Spoken */}
                 <section id='project2' className={`
                 d-flex
                 flex-row
                 flex-wrap
                 justify-content-center
-                align-items-center pt-5
+                align-items-center
+                m-5
                 `}>
                     {/* Image */}
                     <div className={`d-flex 
@@ -416,26 +407,16 @@ let Projects = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    {/* Description */}
+                    {/* Information */}
                     <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}`}>
                         <h1 className={projectStyle.h1}>Spoken</h1>
                         
-                        <section className={`
-                        d-flex flex-row
-                        justify-content-center
-                        align-items-start
-                        gap-4
-                        `}>
-                            {/* Description | Role and Responsibilities */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
                                     This project is a sign language translator desktop
@@ -449,62 +430,58 @@ let Projects = () => {
                                     also highlights the use of deep learning algorithm
                                     which operates with less human intervention.
                                 </p>
-                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
-                                <p className={projectStyle.p}>
+                            </article>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <div className={`
+                                d-flex
+                                flex-row
+                                justify-content-center
+                                align-items-start
+                                `}>
                                     <ul>
-                                        <li>Full-stack Machine Learning Developer</li>
-                                        <li>Desktop Application Developer</li>
+                                        <li>Python</li>
+                                        <li>GitHub</li>
+                                        <li>MediaPipe</li>
                                     </ul>
-                                    <p className={projectStyle.p}>
-                                        I am responsible for coding the data preprocessing pipeline
-                                        which includes data acquisition, data organization, data
-                                        processing, feature extraction, data manipulation for
-                                        acquiring the best train and test datasets configuration,
-                                        the first machine learning algorithm during the phase one of
-                                        our prototype, the evaluation metrics, and the algorithm for
-                                        predicting live for testing the model to new and unseen data.
-                                        I also developed the graphical user interface where the
-                                        deep learning algorithm is integrated into.
-                                    </p>
+                                    <ul>
+                                        <li>TensorFlow</li>
+                                        <li>Keras</li>
+                                        <li>OpenCV</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Pandas</li>
+                                        <li>Scikit-learn</li>
+                                        <li>NumPy</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Tkinter</li>
+                                        <li>CustomTkinter</li>
+                                        <li>AwesomeTkinter</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <ul>
+                                    <li>Full-stack Machine Learning Developer</li>
+                                    <li>Desktop Application Developer</li>
+                                </ul>
+                                <p className={projectStyle.p}>
+                                    I am responsible for coding the data preprocessing pipeline
+                                    which includes data acquisition, data organization, data
+                                    processing, feature extraction, data manipulation for
+                                    acquiring the best train and test datasets configuration,
+                                    the first machine learning algorithm during the phase one of
+                                    our prototype, the evaluation metrics, and the algorithm for
+                                    predicting live for testing the model to new and unseen data.
+                                    I also developed the graphical user interface where the
+                                    deep learning algorithm is integrated into.
                                 </p>
                             </article>
-                            {/* Technologies and Tools Used | Outcomes and Achievements */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            mx-4
-                            `}>
-                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
-                                <p className={projectStyle.p}>
-                                    <div className={`
-                                    d-flex
-                                    flex-row
-                                    justify-content-center
-                                    align-items-start
-                                    `}>
-                                        <ul>
-                                            <li>Python</li>
-                                            <li>GitHub</li>
-                                            <li>MediaPipe</li>
-                                        </ul>
-                                        <ul>
-                                            <li>TensorFlow</li>
-                                            <li>Keras</li>
-                                            <li>OpenCV</li>
-                                        </ul>
-                                        <ul>
-                                            <li>Pandas</li>
-                                            <li>Scikit-learn</li>
-                                            <li>NumPy</li>
-                                        </ul>
-                                        <ul>
-                                            <li>Tkinter</li>
-                                            <li>CustomTkinter</li>
-                                            <li>AwesomeTkinter</li>
-                                        </ul>
-                                    </div>
-                                </p>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
                                     I have successfully improved my skills on full-stack machine
@@ -518,31 +495,23 @@ let Projects = () => {
                     </section>
                 </section>
 
-                {/* 3rd Project */}
+                {/* 3rd Project - Smart Calculator */}
                 <section id='project3' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
-                align-items-center`}>
-                    {/* Description */}
+                align-items-center
+                m-5
+                `}>
+                    {/* Information */}
                     <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}`}>
                         <h1 className={projectStyle.h1}>Smart Calculator</h1>
                         
-                        <section className={`
-                        d-flex flex-row
-                        justify-content-center
-                        align-items-start
-                        gap-4
-                        `}>
-                            {/* Description | Role and Responsibilities */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
                                     This project is a software which features many advanced functions
@@ -551,40 +520,36 @@ let Projects = () => {
                                     of equations and polynomials, graphing 2D plots, graphing 3D plots,
                                     and higher mathematical operations that MATLAB provides.
                                 </p>
-                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
-                                <p className={projectStyle.p}>
+                            </article>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <div className={`
+                                d-flex
+                                flex-row
+                                justify-content-start
+                                align-items-center
+                                `}>
                                     <ul>
-                                        <li>Programmatic GUI Developer</li>
-                                        <li>Mathematician</li>
+                                        <li>MATLAB</li>
                                     </ul>
-                                    <p className={projectStyle.p}>
-                                        I am responsible for hard coding the entire functionalities and GUI
-                                        of the smart calculator application without relying on the App Designer
-                                        of MATLAB. I am also in charge of understanding the mathematical
-                                        operations used in the project for the operations to work as intended.
-                                    </p>
+                                </div>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <ul>
+                                    <li>Programmatic GUI Developer</li>
+                                    <li>Mathematician</li>
+                                </ul>
+                                <p className={projectStyle.p}>
+                                    I am responsible for hard coding the entire functionalities and GUI
+                                    of the smart calculator application without relying on the App Designer
+                                    of MATLAB. I am also in charge of understanding the mathematical
+                                    operations used in the project for the operations to work as intended.
                                 </p>
                             </article>
-                            {/* Technologies and Tools Used | Outcomes and Achievements */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            mx-4
-                            `}>
-                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
-                                <p className={projectStyle.p}>
-                                    <div className={`
-                                    d-flex
-                                    flex-row
-                                    justify-content-center
-                                    align-items-start
-                                    `}>
-                                        <ul>
-                                            <li>MATLAB</li>
-                                        </ul>
-                                    </div>
-                                </p>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
                                     I was able to completely and manually coded the GUI of the smart calculator
@@ -633,20 +598,21 @@ let Projects = () => {
                     </div>
                 </section>
 
-                {/* 4th Project */}
+                {/* 4th Project - Signal Processing Application */}
                 <section id='project4' className={`
                 d-flex
                 flex-row
                 flex-wrap
                 justify-content-center
-                align-items-center pt-5
+                align-items-center
+                m-5
                 `}>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
                     justify-content-center
                     align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
+                    ${projectStyle.imgContainer1}`}>
                         <Swiper
                         className={projectStyle.swiper4}
                         effect='flip'
@@ -667,26 +633,16 @@ let Projects = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    {/* Description */}
+                    {/* Information */}
                     <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}`}>
                         <h1 className={projectStyle.h1}>Signal Procesing Application</h1>
                         
-                        <section className={`
-                        d-flex flex-row
-                        justify-content-center
-                        align-items-start
-                        gap-4
-                        `}>
-                            {/* Description | Role and Responsibilities */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
                                     This project is a desktop application that comprises of different
@@ -696,34 +652,15 @@ let Projects = () => {
                                     such a way that graphs and information about the signal are provided
                                     and available for use.
                                 </p>
-                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
-                                <p className={projectStyle.p}>
-                                    <ul>
-                                        <li>Signal Processing Engineer</li>
-                                        <li>Desktop Application Developer</li>
-                                    </ul>
-                                    <p className={projectStyle.p}>
-                                        I am responsible for creating and managing algorithms to process
-                                        signals and analyze the filtered signals afterwards. I am also
-                                        the one who is responsible for coding the desktop application
-                                        to provide a graphical user interface for users to benefit from.
-                                    </p>
-                                </p>
                             </article>
-                            {/* Technologies and Tools Used | Outcomes and Achievements */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            mx-4
-                            `}>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
                                 <p className={projectStyle.p}>
                                     <div className={`
                                     d-flex
                                     flex-row
-                                    justify-content-center
-                                    align-items-start
+                                    justify-content-start
+                                    align-items-center
                                     `}>
                                         <ul>
                                             <li>MATLAB</li>
@@ -731,6 +668,23 @@ let Projects = () => {
                                         </ul>
                                     </div>
                                 </p>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <ul>
+                                    <li>Signal Processing Engineer</li>
+                                    <li>Desktop Application Developer</li>
+                                </ul>
+                                <p className={projectStyle.p}>
+                                    I am responsible for creating and managing algorithms to process
+                                    signals and analyze the filtered signals afterwards. I am also
+                                    the one who is responsible for coding the desktop application
+                                    to provide a graphical user interface for users to benefit from.
+                                </p>
+                            </article>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
                                     I successfully managed and created algorithms required for the signal
@@ -745,31 +699,23 @@ let Projects = () => {
                     </section>
                 </section>
 
-                {/* 5th Project */}
+                {/* 5th Project - Frequency Distribution Table */}
                 <section id='project5' className={`d-flex 
                 flex-row flex-wrap
-                justify-content-evenly
-                align-items-center`}>
-                    {/* Description */}
+                justify-content-center
+                align-items-center
+                m-5
+                `}>
+                    {/* Information */}
                     <section className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}`}>
                         <h1 className={projectStyle.h1}>Frequency Distribution Table</h1>
                         
-                        <section className={`
-                        d-flex flex-row
-                        justify-content-center
-                        align-items-start
-                        gap-4
-                        `}>
-                            {/* Description | Role and Responsibilities */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
                                     This project is a frequency distribution table with graphical user interface
@@ -779,40 +725,36 @@ let Projects = () => {
                                     activities in order for data analysts to analyze, interpret, and observe the
                                     results.
                                 </p>
-                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
-                                <p className={projectStyle.p}>
+                            </article>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <div className={`
+                                d-flex
+                                flex-row
+                                justify-content-start
+                                align-items-center
+                                `}>
                                     <ul>
-                                        <li>Data Analyst</li>
-                                        <li>Desktop Application Developer</li>
+                                        <li>MATLAB</li>
                                     </ul>
-                                    <p className={projectStyle.p}>
-                                        I am accountable for developing the software by creating GUI programmatically
-                                        using pre MATLAB code. I was also responsible for analyzing and understanding
-                                        the data, and components that should be accounted to build the frequency
-                                        distribution table properly and effectively.
-                                    </p>
+                                </div>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
+                                <ul>
+                                    <li>Data Analyst</li>
+                                    <li>Desktop Application Developer</li>
+                                </ul>
+                                <p className={projectStyle.p}>
+                                    I am accountable for developing the software by creating GUI programmatically
+                                    using pre MATLAB code. I was also responsible for analyzing and understanding
+                                    the data, and components that should be accounted to build the frequency
+                                    distribution table properly and effectively.
                                 </p>
                             </article>
-                            {/* Technologies and Tools Used | Outcomes and Achievements */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            mx-4
-                            `}>
-                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
-                                <p className={projectStyle.p}>
-                                    <div className={`
-                                    d-flex
-                                    flex-row
-                                    justify-content-center
-                                    align-items-start
-                                    `}>
-                                        <ul>
-                                            <li>MATLAB</li>
-                                        </ul>
-                                    </div>
-                                </p>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
                                     I have successfully honed my skills on programming in MATLAB and desktop
@@ -829,7 +771,7 @@ let Projects = () => {
                     flex-row
                     justify-content-center
                     align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
+                    ${projectStyle.imgContainer1}`}>
                         <Swiper
                         effect='creative'
                         modules={[Pagination, EffectCreative]}
@@ -873,20 +815,21 @@ let Projects = () => {
                     </div>
                 </section>
 
-                {/* 6th Project */}
+                {/* 6th Project - CheckMe! */}
                 <section id='project6' className={`
                 d-flex
                 flex-row
                 flex-wrap
                 justify-content-center
-                align-items-center pt-5
+                align-items-center 
+                m-5
                 `}>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
                     justify-content-center
                     align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
+                    ${projectStyle.imgContainer1}`}>
                         <Swiper
                         modules={[Pagination]}
                         direction='vertical'
@@ -917,26 +860,17 @@ let Projects = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    {/* Description */}
-                    <section className={`d-flex 
+                    {/* Information */}
+                    <section className={`
+                    d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}`}>
                         <h1 className={projectStyle.h1}>CheckMe!</h1>
                         
-                        <section className={`
-                        d-flex flex-row
-                        justify-content-center
-                        align-items-start
-                        gap-4
-                        `}>
-                            {/* Description | Role and Responsibilities */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            `}>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Description</h2>
                                 <p className={projectStyle.p}>
                                     This project is a desktop application for teachers to check their quizzes with a multiple
@@ -947,6 +881,30 @@ let Projects = () => {
                                     provide documentation, download and information about me. It also has an installed software
                                     product review form for users to rate the program.
                                 </p>
+                            </article>
+                            <article className='col'>
+                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
+                                <div className={`
+                                d-flex
+                                flex-row
+                                justify-content-start
+                                align-items-center
+                                `}>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>PyQt5</li>
+                                        <li>QtDesigner</li>
+                                    </ul>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Google Form</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Role and Responsibilities</h2>
                                 <ul>
                                     <li>Front-end Web Developer</li>
@@ -959,42 +917,7 @@ let Projects = () => {
                                     Lastly, I wa also responsible in creating the Google Form for the evaluation of the application.
                                 </p>
                             </article>
-                            {/* Technologies and Tools Used | Outcomes and Achievements */}
-                            <article className={`
-                            d-flex flex-column
-                            justify-content-center
-                            align-items-start
-                            mx-4
-                            `}>
-                                <h2 className={projectStyle.h2}>Technologies and Tools Used</h2>
-                                <p className={projectStyle.p}>
-                                    <div className={`
-                                    d-flex
-                                    flex-row
-                                    justify-content-center
-                                    align-items-start
-                                    `}>
-                                        <div
-                                        className={`
-                                        d-flex
-                                        flex-row
-                                        justify-content-center
-                                        align-items-start
-                                        `}
-                                        >
-                                            <ul>
-                                                <li>Python</li>
-                                                <li>PyQt5</li>
-                                                <li>QtDesigner</li>
-                                            </ul>
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>CSS</li>
-                                                <li>Google Form</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </p>
+                            <article className='col'>
                                 <h2 className={projectStyle.h2}>Outcomes and Achievements</h2>
                                 <p className={projectStyle.p}>
                                     I have successfully created the desktop application for checking
@@ -1005,12 +928,12 @@ let Projects = () => {
                                     as Python. Along with that, I was able to improve my kill on front-end
                                     web development by creating a website using HTML and CSS as well.
                                 </p>
-                            </article>
+                            </article>  
                         </section>
                     </section>
                 </section>
 
-                {/* 7th Project */}
+                {/* 7th Project - Pulo Diezmo Road Traffic Lights */}
                 <section id='project7' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
@@ -1019,6 +942,8 @@ let Projects = () => {
                     <section className={`
                     d-flex
                     flex-column
+                    justify-content-center
+                    align-items-start
                     ${projectStyle.mainSecContainer}    
                     `}>
                         <h1 className={projectStyle.h1}>Pulo Diezmo Road Traffic Lights</h1>
