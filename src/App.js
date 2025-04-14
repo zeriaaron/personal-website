@@ -51,18 +51,16 @@ function App() {
         <>
             <Header />
 
-            <main>
-                {/* Routing */}
-                <Routes>
-                    <Route path='/home' element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/certificates' element={<Certificates />} />
-                    <Route path='/projects' element={<Projects />} />
-                    <Route path='/contacts' element={<Contacts />} />
+            {/* Routing */}
+            <Routes>
+                <Route path='/home' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/certificates' element={<Certificates />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/contacts' element={<Contacts />} />
 
-                    <Route path='*' element={<Navigate to='/home' />} />
-                </Routes>
-            </main>
+                <Route path='*' element={<Navigate to='/home' />} />
+            </Routes>
 
             <Footer />
         </>
