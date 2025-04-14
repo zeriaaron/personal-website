@@ -32,8 +32,9 @@ let Projects = () => {
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center m-5
+                pb-5
                 `}>
-                    {/* Intro Desc */}
+                    {/* Introduction */}
                     <article className={`d-flex 
                     flex-column
                     justify-content-center
@@ -108,7 +109,9 @@ let Projects = () => {
                 flex-wrap
                 justify-content-center
                 align-items-center
-                m-5`}>
+                m-5
+                pb-5
+                `}>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
@@ -152,45 +155,40 @@ let Projects = () => {
                     ps-5
                     `}>
                         <h1 className={projectStyle.h1}>My Mission</h1>
-                        <article className={`
-                        d-flex
-                        flex-row
-                        justify-content-center
-                        align-items-center
-                        gap-3
-                        `}>
-                            <h1 className={projectStyle.h1}>1</h1>
-                            <p className={projectStyle.p}>
-                                Help individuals solve their complex problems by providing them 
-                                with digital solutions through innovation, automation, and advancement.
-                            </p>
-                        </article>
-                        <article className={`
-                        d-flex
-                        flex-row
-                        justify-content-center
-                        align-items-center
-                        gap-3
-                        `}>
-                            <h1 className={projectStyle.h1}>2</h1>
-                            <p className={projectStyle.p}>
-                                Provide visually appealing, user-friendly, and highly interactive software 
-                                and web development for users to benefit from.
-                            </p>
-                        </article>
-                        <article className={`
-                        d-flex
-                        flex-row
-                        justify-content-center
-                        align-items-center
-                        gap-3
-                        `}>
-                            <h1 className={projectStyle.h1}>3</h1>
-                            <p className={projectStyle.p}>
-                                Enable businesses and individuals to bridge data and technology
-                                successfully to maximize efficiency, growth and success.
-                            </p>
-                        </article>
+
+                        <section className='row'>
+                            <article className='pe-0 col-1'>
+                                <h1 className={projectStyle.h1}>1</h1>
+                            </article>
+                            <article className='ps-0 col'>
+                                <p className={projectStyle.p}>
+                                    Help individuals solve their complex problems by providing them 
+                                    with digital solutions through innovation, automation, and advancement.
+                                </p>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='pe-0 col-1'>
+                                <h1 className={projectStyle.h1}>2</h1>
+                            </article>
+                            <article className='ps-0 col'>
+                                <p className={projectStyle.p}>
+                                    Provide visually appealing, user-friendly, and highly interactive software 
+                                    and web development for users to benefit from.
+                                </p>
+                            </article>
+                        </section>
+                        <section className='row'>
+                            <article className='pe-0 col-1'>
+                                <h1 className={projectStyle.h1}>3</h1>
+                            </article>
+                            <article className='ps-0 col'>
+                                <p className={projectStyle.p}>
+                                    Enable businesses and individuals to bridge data and technology
+                                    successfully to maximize efficiency, growth and success.
+                                </p>
+                            </article>
+                        </section>
                     </section>
                 </section>
 
@@ -200,7 +198,7 @@ let Projects = () => {
                 flex-row
                 justify-content-center
                 align-items-center
-                rounded
+                rounded-5
                 m-5
                 `} style={{
                     backgroundColor: 'skyblue',
@@ -218,7 +216,7 @@ let Projects = () => {
                     {/* Carousel Images of the Projects */}
                     <Swiper 
                     modules={[FreeMode, Autoplay, EffectCoverflow, Pagination]}
-                    autoplay={{delay: 5000}}
+                    autoplay={{delay: 10000}}
                     centeredSlides={true}
                     slidesPerView={5}
                     spaceBetween={1}
@@ -230,7 +228,7 @@ let Projects = () => {
                         stretch: 70,
                         depth: 30,
                         modifier: 2.5,
-                        slideShadows: false,
+                        slideShadows: true,
                     }}
                     grabCursor={true}
                     className={projectStyle.projectSwiper}
@@ -278,7 +276,7 @@ let Projects = () => {
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center
-                m-5 gap-5
+                m-5 gap-5 pb-5
                 ${projectStyle.scrollOffset}
                 `}>
                     <section className={`
@@ -382,7 +380,7 @@ let Projects = () => {
                 flex-wrap
                 justify-content-center
                 align-items-center
-                m-5 gap-5
+                m-5 gap-5 pb-5
                 ${projectStyle.scrollOffset}
                 `}>
                     {/* Image */}
@@ -514,7 +512,7 @@ let Projects = () => {
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center
-                m-5 gap-5
+                m-5 gap-5 pb-5
                 ${projectStyle.scrollOffset}
                 `}>
                     {/* Information */}
@@ -620,7 +618,7 @@ let Projects = () => {
                 flex-wrap
                 justify-content-center
                 align-items-center
-                m-5 gap-5
+                m-5 gap-5 pb-5
                 ${projectStyle.scrollOffset}
                 `}>
                     {/* Image */}
@@ -720,7 +718,7 @@ let Projects = () => {
                 flex-row flex-wrap
                 justify-content-center
                 align-items-center
-                m-5 gap-5
+                m-5 gap-5 pb-5
                 ${projectStyle.scrollOffset}
                 `}>
                     {/* Information */}
@@ -839,7 +837,7 @@ let Projects = () => {
                 flex-wrap
                 justify-content-center
                 align-items-center 
-                m-5 gap-5
+                m-5 gap-5 pb-5
                 ${projectStyle.scrollOffset}
                 `}>
                     {/* Image */}
@@ -955,7 +953,7 @@ let Projects = () => {
                 <section id='project7' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
-                align-items-center m-5 gap-5
+                align-items-center m-5 gap-5 pb-5
                 ${projectStyle.scrollOffset}
                 `}>
                     {/* Information */}
