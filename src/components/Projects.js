@@ -12,7 +12,7 @@ import {
 } from '../assets/images/projects'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { 
-    Navigation, Pagination, FreeMode, Autoplay, 
+    Pagination, FreeMode, Autoplay, 
     EffectCoverflow, Grid, EffectCube, EffectFlip,
     EffectCards, EffectCreative, EffectFade
 } from 'swiper/modules'
@@ -23,19 +23,23 @@ import 'swiper/swiper-bundle.css'
 let Projects = () => {
     return (
         <>
-            {/* <h1>Projects page</h1> */}
-            <main className={projectStyle.mainContainer}>
+            <main className={`
+            ${projectStyle.mainContainer}
+            mx-5    
+            `}>
                 {/* Introduction Container */}
                 <section className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
-                align-items-center`}>
+                align-items-center m-5
+                `}>
                     {/* Intro Desc */}
                     <article className={`d-flex 
                     flex-column
                     justify-content-center
                     align-items-start 
-                    p-4 ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}
+                    `}>
                         <h1 className={projectStyle.h1}>Introduction</h1>
                         <p className={projectStyle.p}>
                             We now live in a world where the digital
@@ -54,7 +58,7 @@ let Projects = () => {
                         flex-row
                         justify-content-center
                         align-items-center
-                        pt-4 ${projectStyle.gap}
+                        ${projectStyle.gap}
                         `}>
                             {/* About Me */}
                             <article className={`
@@ -89,10 +93,10 @@ let Projects = () => {
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
-                    align-items-center 
-                    px-4
-                    ${projectStyle.imgContainer1}`}>
+                    justify-content-end
+                    align-items-center
+                    ${projectStyle.imgContainer1}
+                    `}>
                         <img src={intro} alt="" className={projectStyle.ls1} style={{borderRadius: '30px'}} />
                     </div>
                 </section>
@@ -103,15 +107,13 @@ let Projects = () => {
                 flex-row
                 flex-wrap
                 justify-content-center
-                align-items-center pt-5
-                `}>
+                align-items-center
+                m-5`}>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
-                    align-items-center 
-                    px-4
-                    ${projectStyle.imgContainer1}`}>
+                    justify-content-start
+                    align-items-center`}>
                         {/* <img src={ls1} alt="" className={projectStyle.ls1} /> */}
                         <Swiper
                         width={700}
@@ -147,7 +149,8 @@ let Projects = () => {
                     flex-column
                     justify-content-center
                     align-items-start
-                    p-4 ${projectStyle.mainSecContainer} gap-2
+                    ${projectStyle.mainSecContainer}
+                    ps-5
                     `}>
                         <h1 className={projectStyle.h1}>My Mission</h1>
                         <article className={`
@@ -196,6 +199,7 @@ let Projects = () => {
                 justify-content-center
                 align-items-center
                 rounded
+                m-5
                 `} style={{
                     backgroundColor: 'skyblue',
                     marginBottom: '100px', 
@@ -207,75 +211,81 @@ let Projects = () => {
                     <h1 className={projectStyle.h1p}>My Projects</h1>
                 </div>
 
-                {/* Carousel Images of the Projects */}
-                <Swiper 
-                modules={[FreeMode, Autoplay, EffectCoverflow, Pagination]}
-                autoplay={{delay: 5000}}
-                centeredSlides={true}
-                slidesPerView={5}
-                spaceBetween={1}
-                pagination={{clickable: true}}
-                loop={true}
-                effect='coverflow'
-                coverflowEffect={{
-                    rotate: 0,
-                    stretch: 70,
-                    depth: 30,
-                    modifier: 2.5,
-                    slideShadows: false,
-                }}
-                grabCursor={true}
-                className={projectStyle.projectSwiper}
-                >
-                    <SwiperSlide className={projectStyle.swiperSlide}>
-                        <a href="#project1">
-                            <img src={proj1v2} alt="Philippine Informal Reading Inventory"/>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide className={projectStyle.swiperSlide}>
-                        <a href="#project2">
-                            <img src={proj2v2} alt=""/>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide className={projectStyle.swiperSlide}>
-                        <a href="#project3">
-                            <img src={proj3v2} alt=""/>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide className={projectStyle.swiperSlide}>
-                        <a href="#project4">
-                            <img src={proj4v2} alt=""/>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide className={projectStyle.swiperSlide}>
-                        <a href="#project5">
-                            <img src={proj5v2} alt=""/>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide className={projectStyle.swiperSlide}>
-                        <a href="#project6">
-                            <img src={proj6v2} alt=""/>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide className={projectStyle.swiperSlide}>
-                        <a href="#project7">
-                            <img src={proj7v2} alt=""/>
-                        </a>
-                    </SwiperSlide>
-                </Swiper>
+                {/* Projects Carousel */}
+                <section>
+                    {/* Carousel Images of the Projects */}
+                    <Swiper 
+                    modules={[FreeMode, Autoplay, EffectCoverflow, Pagination]}
+                    autoplay={{delay: 5000}}
+                    centeredSlides={true}
+                    slidesPerView={5}
+                    spaceBetween={1}
+                    pagination={{clickable: true}}
+                    loop={true}
+                    effect='coverflow'
+                    coverflowEffect={{
+                        rotate: 0,
+                        stretch: 70,
+                        depth: 30,
+                        modifier: 2.5,
+                        slideShadows: false,
+                    }}
+                    grabCursor={true}
+                    className={projectStyle.projectSwiper}
+                    >
+                        <SwiperSlide className={projectStyle.swiperSlide}>
+                            <a href="#project1">
+                                <img src={proj1v2} alt="Philippine Informal Reading Inventory"/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide className={projectStyle.swiperSlide}>
+                            <a href="#project2">
+                                <img src={proj2v2} alt=""/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide className={projectStyle.swiperSlide}>
+                            <a href="#project3">
+                                <img src={proj3v2} alt=""/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide className={projectStyle.swiperSlide}>
+                            <a href="#project4">
+                                <img src={proj4v2} alt=""/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide className={projectStyle.swiperSlide}>
+                            <a href="#project5">
+                                <img src={proj5v2} alt=""/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide className={projectStyle.swiperSlide}>
+                            <a href="#project6">
+                                <img src={proj6v2} alt=""/>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide className={projectStyle.swiperSlide}>
+                            <a href="#project7">
+                                <img src={proj7v2} alt=""/>
+                            </a>
+                        </SwiperSlide>
+                    </Swiper>
+                </section>
 
                 {/* 1st Project - Phil IRI */}
                 <section id='project1' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center
-                m-5
+                m-5 gap-5
+                ${projectStyle.scrollOffset}
                 `}>
-                    <section className={`d-flex 
+                    <section className={`
+                    d-flex
                     flex-column
                     justify-content-center
                     align-items-start 
-                    ${projectStyle.mainSecContainer}`}>
+                    ${projectStyle.mainSecContainer}
+                    `}>
                         <h1 className={projectStyle.h1}>Philippine Informal Reading Inventory Automation</h1>
                         
                         <section className='row'>
@@ -329,9 +339,8 @@ let Projects = () => {
                     <div className={`
                     d-flex
                     flex-row
-                    justify-content-center
-                    align-items-center    
-                    p-4
+                    justify-content-end
+                    align-items-center
                     `}>
                         <Swiper
                         modules={[Pagination, EffectCube]}
@@ -340,7 +349,7 @@ let Projects = () => {
                         loop={true}
                         grabCursor={true}
                         pagination={{clickable: true}}
-                        className={projectStyle.swiper1}
+                        className={projectStyle.swiper}
                         >
                             <SwiperSlide>
                                 <img src={proj1_1} alt="" className={projectStyle.imgProj}/>
@@ -371,21 +380,23 @@ let Projects = () => {
                 flex-wrap
                 justify-content-center
                 align-items-center
-                m-5
+                m-5 gap-5
+                ${projectStyle.scrollOffset}
                 `}>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
-                    align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
+                    justify-content-start
+                    align-items-center
+                    pe-5
+                    `}>
                         {/* <img src={ls1} alt="" className={projectStyle.ls1} /> */}
                         <Swiper
                         effect='cards'
                         grabCursor={true}
                         modules={[EffectCards, Pagination]}
                         pagination={{clickable: true}}
-                        className={projectStyle.swiper2}
+                        className={projectStyle.swiper}
                         >
                             <SwiperSlide>
                                 <img src={proj2_1} alt="" className={projectStyle.imgProj}/>                                
@@ -411,7 +422,8 @@ let Projects = () => {
                     <section className={`d-flex 
                     flex-column
                     justify-content-center
-                    align-items-start 
+                    align-items-start
+                    ps-3
                     ${projectStyle.mainSecContainer}`}>
                         <h1 className={projectStyle.h1}>Spoken</h1>
                         
@@ -500,7 +512,8 @@ let Projects = () => {
                 flex-row flex-wrap
                 justify-content-evenly
                 align-items-center
-                m-5
+                m-5 gap-5
+                ${projectStyle.scrollOffset}
                 `}>
                     {/* Information */}
                     <section className={`d-flex 
@@ -564,10 +577,10 @@ let Projects = () => {
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
-                    align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
-                        <Swiper className={projectStyle.swiper3}
+                    justify-content-end
+                    align-items-center
+                    `}>
+                        <Swiper className={projectStyle.swiper}
                         effect='coverflow'
                         modules={[Pagination, EffectCoverflow]}
                         grabCursor={true}
@@ -605,12 +618,13 @@ let Projects = () => {
                 flex-wrap
                 justify-content-center
                 align-items-center
-                m-5
+                m-5 gap-5
+                ${projectStyle.scrollOffset}
                 `}>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
+                    justify-content-start
                     align-items-center 
                     ${projectStyle.imgContainer1}`}>
                         <Swiper
@@ -704,7 +718,8 @@ let Projects = () => {
                 flex-row flex-wrap
                 justify-content-center
                 align-items-center
-                m-5
+                m-5 gap-5
+                ${projectStyle.scrollOffset}
                 `}>
                     {/* Information */}
                     <section className={`d-flex 
@@ -769,15 +784,15 @@ let Projects = () => {
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
-                    align-items-center 
-                    ${projectStyle.imgContainer1}`}>
+                    justify-content-end
+                    align-items-center
+                    `}>
                         <Swiper
                         effect='creative'
                         modules={[Pagination, EffectCreative]}
                         grabCursor={true}
                         pagination={{clickable: true}}
-                        className={projectStyle.swiper5}
+                        className={projectStyle.swiper}
                         creativeEffect={{
                             limitProgress: 1,
                             prev: {
@@ -822,14 +837,15 @@ let Projects = () => {
                 flex-wrap
                 justify-content-center
                 align-items-center 
-                m-5
+                m-5 gap-5
+                ${projectStyle.scrollOffset}
                 `}>
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
-                    align-items-center 
-                    ${projectStyle.imgContainer1}`}>
+                    justify-content-start
+                    align-items-center
+                    `}>
                         <Swiper
                         modules={[Pagination]}
                         direction='vertical'
@@ -837,7 +853,7 @@ let Projects = () => {
                         pagination={{
                             clickable: true,
                         }}
-                        className={projectStyle.swiper6}
+                        className={projectStyle.swiper}
                         loop={true}
                         >
                             <SwiperSlide className={projectStyle.swiperSlide}>
@@ -937,7 +953,9 @@ let Projects = () => {
                 <section id='project7' className={`d-flex 
                 flex-row flex-wrap
                 justify-content-evenly
-                align-items-center m-5`}>
+                align-items-center m-5 gap-5
+                ${projectStyle.scrollOffset}
+                `}>
                     {/* Information */}
                     <section className={`
                     d-flex
@@ -1003,11 +1021,11 @@ let Projects = () => {
                     {/* Image */}
                     <div className={`d-flex 
                     flex-row
-                    justify-content-center
-                    align-items-center 
-                    px-4 ${projectStyle.imgContainer1}`}>
+                    justify-content-end
+                    align-items-center
+                    `}>
                         <Swiper
-                        className={projectStyle.swiper7}
+                        className={projectStyle.swiper}
                         effect='fade'
                         modules={[Pagination, EffectFade]}
                         grabCursor={true}

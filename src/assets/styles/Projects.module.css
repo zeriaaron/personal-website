@@ -28,11 +28,6 @@
     padding-top: 56px;
 }
 
-.ls1 {
-    width: 650px;
-    height: 600px;
-}
-
 .mainSecContainer {
     flex: 1;
 }
@@ -78,51 +73,14 @@
     border-radius: 10px;
 }
 
-.swiper1 {
+.swiper {
     width: 700px;
     height: 500px;
     margin: 0;
     border-radius: 10px;
 }
 
-.swiper2 {
-    width: 700px;
-    height: 500px;
-    margin: 0;
-    border-radius: 10px;
-}
-
-.swiper3 {
-    width: 700px;
-    height: 500px;
-    margin: 0;
-    border-radius: 10px;
-}
-
-.swiper4 {
-    width: 700px;
-    height: 500px;
-    margin: 0;
-    border-radius: 10px;
-}
-
-.swiper5 {
-    width: 700px;
-    height: 500px;
-    margin: 0;
-    border-radius: 10px;
-}
-
-.swiper6 {
-    width: 700px;
-    height: 500px;
-    margin: 0;
-    border-radius: 10px;
-}
-
-.swiper7 {
-    width: 700px;
-    height: 500px;
-    margin: 0;
-    border-radius: 10px;
+/* Scroll */
+.scrollOffset {
+    scroll-margin-top: 60px;
 }
