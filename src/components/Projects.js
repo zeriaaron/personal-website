@@ -58,7 +58,7 @@ let Projects = () => {
                         flex-row
                         justify-content-center
                         align-items-center
-                        ${projectStyle.gap}
+                        gap-5
                         `}>
                             {/* About Me */}
                             <article className={`
@@ -97,7 +97,7 @@ let Projects = () => {
                     align-items-center
                     ${projectStyle.imgContainer1}
                     `}>
-                        <img src={intro} alt="" className={projectStyle.ls1} style={{borderRadius: '30px'}} />
+                        <img src={intro} alt="" style={{width: '700px', height: '100%', borderRadius: '30px', objectFit: 'cover'}} />
                     </div>
                 </section>
 
@@ -114,7 +114,6 @@ let Projects = () => {
                     flex-row
                     justify-content-start
                     align-items-center`}>
-                        {/* <img src={ls1} alt="" className={projectStyle.ls1} /> */}
                         <Swiper
                         width={700}
                         height={700}
@@ -157,7 +156,8 @@ let Projects = () => {
                         d-flex
                         flex-row
                         justify-content-center
-                        align-items-center ${projectStyle.gap}
+                        align-items-center
+                        gap-3
                         `}>
                             <h1 className={projectStyle.h1}>1</h1>
                             <p className={projectStyle.p}>
@@ -169,7 +169,8 @@ let Projects = () => {
                         d-flex
                         flex-row
                         justify-content-center
-                        align-items-center ${projectStyle.gap}
+                        align-items-center
+                        gap-3
                         `}>
                             <h1 className={projectStyle.h1}>2</h1>
                             <p className={projectStyle.p}>
@@ -181,7 +182,8 @@ let Projects = () => {
                         d-flex
                         flex-row
                         justify-content-center
-                        align-items-center ${projectStyle.gap}
+                        align-items-center
+                        gap-3
                         `}>
                             <h1 className={projectStyle.h1}>3</h1>
                             <p className={projectStyle.p}>
